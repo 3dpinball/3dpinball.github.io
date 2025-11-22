@@ -1,5 +1,5 @@
 {
   "allowAds": true,
-  "delaySeconds": 30,
+  "delaySeconds": 10,
   "message": "Cho phép hiển thị quảng cáo banner"
 }
