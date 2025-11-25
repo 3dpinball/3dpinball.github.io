@@ -1,5 +1,5 @@
 {
-  "allowAds": true,
+  "allowAds": false,
   "delaySeconds": 20,
   "message": "Cho phép hiển thị quảng cáo banner",
   "forcePremiumMode": 1
