@@ -13623,7 +13623,7 @@ function Ah() {
     return te(() => {
         async function t() {
             try {
-                await Bt("./dragon.jsdos", e)
+                await Bt("https://3dpinball.github.io/dragon/dragon.jsdos", e)
             } catch (n) {
                 e.dispatch(I.actions.bndError(n.message ?? "unexpected error"))
             }
