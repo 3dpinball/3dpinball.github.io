@@ -1939,13 +1939,13 @@ html {
 }
 #keyhelo7 {
     transform-origin: right top;
-    transform: scaleX(8) scaleY(6);
+    transform: scaleX(6) scaleY(4);
     transition: transform 0.1s ease;
     background-color: none;
 }
 #keyhelo4 {
     transform-origin: left top;
-    transform: scaleX(8) scaleY(6);
+    transform: scaleX(6) scaleY(4);
     transition: transform 0.1s ease;
     background-color: none;
 }
