@@ -1,10 +1,10 @@
 @layer base, tokens, animations,  components, utilities;
 @layer tokens {
-  @font-face {
-    font-family: Troubleside;
-    src: url("https://cdn.jsdelivr.net/gh/chytanka/chytanka.github.io/src/assets/fonts/Troubleside.ttf");
-    font-display: swap;
-  }
+ @font-face {
+  font-family: 'Troubleside';
+  src: url('./Troubleside.ttf') format('truetype');
+  font-display: swap;
+}
   :root {
     --ratio: 257 / 364;
     --t: 0.133333334s;

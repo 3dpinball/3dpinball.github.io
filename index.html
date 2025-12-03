@@ -3,79 +3,103 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Full Tilt! Pinball</title>
+    <title>3d Pinball full version</title>
     <link rel="stylesheet" href="./style.css">
 
   </head>
-    <style>
+   <style>
 		html, body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
+
       transform: scale(0.95);
 
 }
-main {
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-		</style>
+	</style>
+    
   <body>
-
+	
   <main>
 
 	<section>
-		<header>
-			<h1>Full Tilt! Pinball</h1>
-<p style="font-size:12px; opacity:0.8;">
-  ❤️ Enjoy the game? ⭐️✨ Support me with a good rating on the app store! 🙏
-</p>
+		<header style="
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+">
+    <h1 style="margin:0;">Full Tilt! 1 Pinball</h1>
+    
+    <p style="
+        font-size:16px;
+        opacity:0.8;
+        text-align:right;
+        margin:0;
+        line-height:1.2;
+    ">
+        ❤️ Enjoy the game? ⭐️✨<br>
+        ❤️ Support me with a good rating on the app store! 🙏
+    </p>
+</header>
 
-
-
-		</header>
-		<article style="--avarage-color: #b0b6a9"data-path="./skul">
+				<article style="--avarage-color: #b47460" data-path="./space">
 			<figure>
-				<img src="./skulduggery.png">
-				<figcaption>Skulduggery ▶</figcaption>
+				<img src="./img/spacecadet2.png">
+				<figcaption>Space Cadet XP</figcaption>
+			</figure>
+		</article>
+		<article style="--avarage-color: #b0b6a9" data-path="./skul">
+			<figure>
+				<img src="./img/skulduggery.png">
+				<figcaption>Skulduggery</figcaption>
 			</figure>
 		</article>
 
 		<article style="--avarage-color: #afa294" data-path="./dragon">
 			<figure>
-				<img src="./dragonkeep.png">
-				<figcaption>Dragon's Keep ▶</figcaption>
+				<img src="./img/dragonkeep.png">
+				<figcaption>Dragon’s Keep</figcaption>
 			</figure>
 		</article>
 
-		<article style="--avarage-color: #3c3c3d" data-path="./space">
+		<article style="--avarage-color: #3c3c3d" data-path="./space1">
 			<figure>
-				<img src="./spacecadet.png">
-				<figcaption>Space Cadet ▶</figcaption>
+				<img src="./img/spacecadet1.png">
+				<figcaption>Space Cadet</figcaption>
 			</figure>
 		</article>
 
-	
 
-	
+
 		
-
 	</section>
+
+	<section>
+		<header>
+			<h1>Full Tilt! 2 Pinball</h1>
+		</header>
+		
+		<article style="--avarage-color: #b16e79" data-path="./alien">
+			<figure>
+				<img src="./img/alien.png">
+				<figcaption>Alien Daze</figcaption>
+			</figure>
+		</article>
+		<article style="--avarage-color: #bdbdbd" data-path="./hero">
+			<figure>
+				<img src="./img/hero.png">
+				<figcaption>Captain Hero</figcaption>
+			</figure>
+		</article>
+		<article style="--avarage-color: #6e695e" data-path="./mad">
+			<figure>
+				<img src="./img/mad.png">
+				<figcaption>Mad Scientist</figcaption>
+			</figure>
+		</article>
+	</section>
+
+	
 </main>
     <script  src="./script.js"></script>
-	<script>
+<script>
 		const games = document.querySelectorAll('article');
 
 games.forEach(game => {
