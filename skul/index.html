@@ -79,7 +79,7 @@
   
   <button id="backButton">🏠</button>
 
-    <div id="dos" style="width: 100%; height: 100%"></div>
+    <div id="dos" style="width: 100%; height: 100%; transform: scale(1.03)"></div>
   <script>
     if (window.android !== undefined && window.android.startHardwareService !== undefined) {
         window.backendHardware = (emulator) => {
@@ -151,7 +151,7 @@ boot c:
   <script>
     Dos(document.getElementById("dos"), {
         url: "./pirates.jsdos",
-
+        renderBackend: "webgl",
         // === THÊM KEYBOARD ẢO ===
         softKeyboardLayout: [
             [
