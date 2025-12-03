@@ -131,7 +131,6 @@ figure {
     background-size: 7px 7px;
     background-position: center;
     box-shadow: 1px 1px var(--surface), var(--shadow-distance) var(--shadow-distance) var(--shadow-color);
-    opacity: min(var(--item-scale), 0.8);
     transform: rotate(var(--deg)) translateY(var(--y)) scale(var(--item-scale)) rotateX(var(--item-angle));
     transition: all var(--t) ease-in-out;
     will-change: transform;
