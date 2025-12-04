@@ -1937,26 +1937,17 @@ html {
     border-radius: inherit;
   }
 }
-#keyhelo7,
-#keyhelo4 {
-    position: fixed;       /* Đưa vào hệ toạ độ màn hình */
-    bottom: 0;             /* Dính sát cạnh dưới */
-    left: 0;
-    width: 50vw;           /* Mỗi cái chiếm nửa màn hình */
-    height: 50vh;          /* Chiếm toàn bộ nửa dưới */
-    z-index: -1;           /* Nằm dưới tất cả các phần tử khác */
-    transform: none;       /* Giữ nguyên nếu không cần scale */
-    background: none;
-}
-
-/* keyhelo7 ở phía trái – góc phần tư thứ 3 */
-#keyhelo4 {
-    left: 0;
-}
-
-/* keyhelo4 ở phía phải – góc phần tư thứ 4 */
 #keyhelo7 {
-    left: 50vw;
+    transform-origin: right top;
+    transform: scaleX(6) scaleY(4);
+    transition: transform 0.1s ease;
+    background-color: none;
+}
+#keyhelo4 {
+    transform-origin: left top;
+    transform: scaleX(6) scaleY(4);
+    transition: transform 0.1s ease;
+    background-color: none;
 }
 
 #keyhelo1, #keyhelo2, #keyhelo3{
