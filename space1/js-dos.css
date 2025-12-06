@@ -1937,17 +1937,24 @@ html {
     border-radius: inherit;
   }
 }
-#keyhelo7 {
-    transform-origin: right top;
-    transform: scaleX(6) scaleY(4);
-    transition: transform 0.1s ease;
-    background-color: none;
-}
+#keyhelo7, 
 #keyhelo4 {
-    transform-origin: left top;
-    transform: scaleX(6) scaleY(4);
-    transition: transform 0.1s ease;
-    background-color: none;
+    position: fixed;
+    top: 5vh;          /* cách top 5% */
+    bottom: 5vh;       /* cách bottom 5% */
+    width: 40vw;       /* 40% chiều rộng màn hình */
+    background-color: transparent;
+    z-index: 5;       /* đẩy xuống dưới */
+}
+
+/* Bên phải */
+#keyhelo7 {
+    right: 0;
+}
+
+/* Bên trái */
+#keyhelo4 {
+    left: 0;
 }
 
 #keyhelo1, #keyhelo2, #keyhelo3{
@@ -1962,7 +1969,7 @@ html {
  
   border-radius: var(--rounded-btn, 0.5rem);
   border-bottom-width: 2px;
-
+ z-index: 10; 
   left:10%;
 }
 #keyhelo5,#keyhelo6,#keyhelo8,#keyhelo9{
@@ -1977,9 +1984,10 @@ html {
 
   border-radius: var(--rounded-btn, 0.5rem);
   border-bottom-width: 2px;
-
+ z-index: 10; 
   margin-right:20%;
 }
+
 .kbd {
 
 }
