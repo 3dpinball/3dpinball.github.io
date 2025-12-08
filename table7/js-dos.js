@@ -13874,7 +13874,7 @@ const jh = (e, t = {}) => {
 			}
 		})().catch(console.error)
 	}
-	o.subscribe(u), Sd(o, t.pathPrefix ?? "https://3dpinball.github.io/mad/emulators/", t.pathSuffix ?? "");
+	o.subscribe(u), Sd(o, t.pathPrefix ?? "https://3dpinball.github.io/table7/emulators/", t.pathSuffix ?? "");
 
 	function a(L) {
 		o.dispatch(z.actions.theme(L))
