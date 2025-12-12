@@ -33723,7 +33723,7 @@ Phaser.ScaleManager.prototype = {
         this.game.canvas.style.marginTop = this.margin.y + 'px';
 
         // Lệch trái 10%
-        this.game.canvas.style.marginLeft = '10%';
+        this.game.canvas.style.marginLeft = '20%';
     }
     else
     {
@@ -33731,7 +33731,7 @@ Phaser.ScaleManager.prototype = {
         this.game.canvas.style.marginTop = '0px';
 
         // Lệch trái 15%
-        this.game.canvas.style.marginLeft = '15%';
+        this.game.canvas.style.marginLeft = '20%';
     }
 
     // ⭐ Thêm khung cho canvas
