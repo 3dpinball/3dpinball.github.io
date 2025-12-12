@@ -8,8 +8,7 @@
     <title>Pinball</title>
     <style type="text/css">
       body{
-        background-color: #000000;
-            background-image: url(./bg.png);
+        background-color: #333;
       }
 	  	html,
 		body {
@@ -18,13 +17,16 @@
     overflow: hidden;
     height: 100vh;
     width: 100vw;                 /* đảm bảo luôn full ngang */
+    display: flex;
     flex-direction: column;
     flex: 1;
+
+    background-image: url(./bg.png);
     background-size: cover;       /* luôn phủ đầy màn hình */
     background-position: center;  /* căn giữa */
     background-repeat: no-repeat; /* không lặp */
-    transform: scaleX(1.1); /* phóng to theo chiều ngang gấp 2 lần */
 
+    color: black;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -66,7 +68,7 @@
 				which: 39,
 			
 			  }))}, 50);"></button>
-			  <img  src="space.png" style="position:absolute;z-index:100;right:12%;height:60px;width:50px;bottom:40%;border-radius: 50%;opacity: 0.8;"   ontouchstart="window.dispatchEvent(new KeyboardEvent('keydown', {
+			  <img  src="space.png" style="position:absolute;z-index:100;right:2%;height:60px;width:60px;bottom:40%;border-radius: 50%;opacity: 0.8;"   ontouchstart="window.dispatchEvent(new KeyboardEvent('keydown', {
 				
 				keyCode: 32,
 				
