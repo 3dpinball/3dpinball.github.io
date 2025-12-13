@@ -1,4 +1,4 @@
 {
-    "noads": true,
-    "table": false
+    "noads": false,
+    "table": true
 }
