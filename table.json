@@ -1,9 +1,9 @@
 {
     "table1":true,
     "table2":false,
-    "table3":true,
-    "table4":true,
-    "table5":true,
-    "table6":true,
-    "table7":true
+    "table3":false,
+    "table4":false,
+    "table5":false,
+    "table6":false,
+    "table7":false
 }
