@@ -4020,7 +4020,7 @@ html {
 }
 .px-4 {
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 0rem;
 }
 .px-8 {
   padding-left: 2rem;
