@@ -1970,7 +1970,7 @@ html {
   border-radius: var(--rounded-btn, 0.5rem);
   border-bottom-width: 2px;
  z-index: 10; 
-  left:10%;
+  left:14%;
 }
 #keyhelo5,#keyhelo6,#keyhelo8,#keyhelo9{
   display: inline-flex;
