@@ -19,6 +19,19 @@ fileInput.addEventListener("change", e=>{
 globalFillColorInput = document.getElementById("globalFillColor");
 globalStrokeColorInput = document.getElementById("globalStrokeColor");
 
+fontInput = document.getElementById("fontInput");
+
+fontInput.addEventListener("change", e=>{
+  themeData.fontFamily = e.target.value;
+  renderPreview(); // hoặc renderForm();
+});
+nameInput = document.getElementById("nameInput");
+
+nameInput.addEventListener("input", e=>{
+  themeData.name = e.target.value;
+  renderPreview();
+});
+
 globalFillColorInput.addEventListener("change", e=>{
   globalFillColor = e.target.value;
   renderForm();
@@ -72,8 +85,20 @@ function renderForm(){
             <div class="icon-preview">${oldIcons[k]||""}</div>
             <div class="icon-preview">${newSvg}</div>
           </div>
-          <input type="file" accept=".svg" onchange="uploadIcon(event,'${k}')">
-        <button onclick="openSvgCreator('${k}')">Create</button>
+          <button class="btn-create" onclick="openSvgCreator('${k}')">Create</button>
+
+<button class="btn-upload" onclick="document.getElementById('file_${k}').click()">
+  Upload SVG
+</button>
+
+<input 
+  type="file" 
+  id="file_${k}" 
+  accept=".svg" 
+  style="display:none"
+  onchange="uploadIcon(event,'${k}')">
+
+       
 
           </div>`;
     }
@@ -91,12 +116,19 @@ function applyGlobalColor(svgText){
   const svg = doc.querySelector("svg");
   if(!svg) return svgText;
 
-  doc.querySelectorAll("*").forEach(el=>{
-    if(globalFillColor && el.getAttribute("fill")!=="none")
-      el.setAttribute("fill",globalFillColor);
-    if(globalStrokeColor && el.getAttribute("stroke")!=="none")
-      el.setAttribute("stroke",globalStrokeColor);
-  });
+ doc.querySelectorAll("*").forEach(el=>{
+  const fill = el.getAttribute("fill");
+  const stroke = el.getAttribute("stroke");
+
+  if(globalFillColor && fill && fill !== "none"){
+    el.setAttribute("fill", globalFillColor);
+  }
+
+  if(globalStrokeColor && stroke && stroke !== "none"){
+    el.setAttribute("stroke", globalStrokeColor);
+  }
+});
+
 
   return svg.outerHTML.replace(/"/g,"'").replace(/\r?\n|\r/g,"");
 }
@@ -152,9 +184,11 @@ function slugify(text){
 }
 
 function downloadJSON(){
+ themeData.name = nameInput.value;
+  themeData.fontFamily = fontInput.value;
 
-  // clone object để không phá themeData gốc
   const exportTheme = JSON.parse(JSON.stringify(themeData));
+  // clone object để không phá themeData gốc
 
   if(globalFillColor || globalStrokeColor){
     for(let k in exportTheme.icons){
@@ -198,7 +232,9 @@ function renderPreview(){
       <div class="dot red"></div>
       <div class="dot yellow"></div>
       <div class="dot green"></div>
-      <strong>${themeData.name || "Paint"}</strong>
+<strong style="font-family:'${themeData.fontFamily || "sans-serif"}'">
+  ${themeData.name || "Paint"}
+</strong>
     </div>
 
    <div class="toolbar" style="background:${c.panelBackground}">
@@ -228,9 +264,17 @@ function renderPreview(){
    --toolbar-header:${c.toolbarHeader};
    --tool-face:${c.toolButtonFace};
  ">
-        <div class="toolbox-header" style="background:${c.toolbarHeader}">Tools</div>
-        <div class="toolbox-grid">${toolIcons}</div>
-        <div class="more">More</div>
+        <div class="toolbox-header" 
+     style="background:${c.toolbarHeader}; font-family:'${themeData.fontFamily || "sans-serif"}'">
+  Tools
+</div>
+
+<div class="toolbox-grid">${toolIcons}</div>
+
+<div class="more" style="font-family:'${themeData.fontFamily || "sans-serif"}'">
+  More
+</div>
+
       </div>
 
       <div class="canvas"></div>
@@ -253,3 +297,5 @@ function renderPreview(){
 function openSvgCreator(key){
   SvgCreator.open(key);
 }
+
+

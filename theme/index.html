@@ -18,8 +18,65 @@
   <div class="section">
     <label>Name</label>
     <input id="nameInput"><br><br>
-    <label>Font Family</label>
-    <input id="fontInput">
+   <label>Font Family</label>
+<select id="fontInput">
+  <option value="">-- Select font --</option>
+ <option>Andhita</option>
+<option>AngerisPixelOutline</option>
+<option>Ankora</option>
+<option>Balenia</option>
+<option>BelovedAngelicaSans</option>
+<option>BohoRainbow</option>
+<option>Crisvalery</option>
+<option>CSRomina</option>
+<option>CSTornado</option>
+<option>Cartis</option>
+<option>Castrela</option>
+<option>CharlieKlarisma</option>
+<option>DarknightTomorrow</option>
+<option>Devliza</option>
+<option>EastKindLight</option>
+<option>Fantastico</option>
+<option>Ficoria</option>
+<option>Figken</option>
+<option>GlamourCoquette</option>
+<option>HenrytaBradley</option>
+<option>Hosera</option>
+<option>LucentiRomance</option>
+<option>Modesta</option>
+<option>MartinLangley</option>
+<option>Maung</option>
+<option>MelodySunday</option>
+<option>MelonaWoman</option>
+<option>MetroLuxes</option>
+<option>MichaelCarsl</option>
+<option>Misadon</option>
+<option>Monse</option>
+<option>Mooulena</option>
+<option>Morase</option>
+<option>Overides</option>
+<option>PottelikaKinetics</option>
+<option>Quick</option>
+<option>Rimons</option>
+<option>RawPixel</option>
+<option>RecitalsBrush</option>
+<option>Relington</option>
+<option>Rocklords</option>
+<option>Stirle</option>
+<option>Summer</option>
+<option>TheChrisera</option>
+<option>TheBonesZombie</option>
+<option>TheXamber</option>
+<option>TornFlesh</option>
+<option>Unida</option>
+<option>VandalSoulShadow</option>
+<option>Viplind</option>
+<option>WangorAsfrac</option>
+<option>Zukoline</option>
+
+
+</select>
+
   </div>
 
 
@@ -41,7 +98,15 @@ placeholder='"windowBackground": "#C0C0C0",
 
     </div>
   </div>
+  <div class="section">
 
+    <label>🖊 Global SVG Stroke Color</label>
+    <input type="color" id="globalStrokeColor">
+    <label>🎨 Global SVG Fill Color</label>
+    <input type="color" id="globalFillColor">
+
+    <button onclick="clearGlobalSvgColor()">Reset</button>
+  </div>
   <div class="section">
     <h3>🖼 Icons (Old → New SVG)</h3>
     <div id="icons" class="multi-column"></div>
@@ -74,7 +139,6 @@ placeholder='"windowBackground": "#C0C0C0",
     </div>
   </div>
 </div>
-
 
 <script src="script.js"></script>
 <script src="svg_creator.js"></script>

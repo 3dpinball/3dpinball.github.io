@@ -1,3 +1,57 @@
+@font-face { font-family: "Andhita"; src: url("./assets/ifonts/Andhita.ttf") format("truetype"); }
+@font-face { font-family: "AngerisPixelOutline"; src: url("./assets/ifonts/AngerisPixel_Outline.ttf") format("truetype"); }
+@font-face { font-family: "Ankora"; src: url("./assets/ifonts/Ankora_Regular.ttf") format("truetype"); }
+@font-face { font-family: "Balenia"; src: url("./assets/ifonts/Balenia.ttf") format("truetype"); }
+@font-face { font-family: "BelovedAngelicaSans"; src: url("./assets/ifonts/Beloved_Angelica_Sans.ttf") format("truetype"); }
+@font-face { font-family: "BohoRainbow"; src: url("./assets/ifonts/Boho_Rainbow.ttf") format("truetype"); }
+@font-face { font-family: "Crisvalery"; src: url("./assets/ifonts/CRISVALERY.ttf") format("truetype"); }
+@font-face { font-family: "CSRomina"; src: url("./assets/ifonts/CSRomina.ttf") format("truetype"); }
+@font-face { font-family: "CSTornado"; src: url("./assets/ifonts/CSTornado_Regular.ttf") format("truetype"); }
+@font-face { font-family: "Cartis"; src: url("./assets/ifonts/Cartis.ttf") format("truetype"); }
+@font-face { font-family: "Castrela"; src: url("./assets/ifonts/Castrela.ttf") format("truetype"); }
+@font-face { font-family: "CharlieKlarisma"; src: url("./assets/ifonts/Charlie_Klarisma.ttf") format("truetype"); }
+@font-face { font-family: "DarknightTomorrow"; src: url("./assets/ifonts/Darknight_Tomorrow.ttf") format("truetype"); }
+@font-face { font-family: "Devliza"; src: url("./assets/ifonts/Devliza.ttf") format("truetype"); }
+@font-face { font-family: "EastKindLight"; src: url("./assets/ifonts/EastKindLight.ttf") format("truetype"); }
+@font-face { font-family: "Fantastico"; src: url("./assets/ifonts/Fantastico.ttf") format("truetype"); }
+@font-face { font-family: "Ficoria"; src: url("./assets/ifonts/Ficoria.ttf") format("truetype"); }
+@font-face { font-family: "Figken"; src: url("./assets/ifonts/Figken.ttf") format("truetype"); }
+@font-face { font-family: "GlamourCoquette"; src: url("./assets/ifonts/Glamour_Coquette_Regular.ttf") format("truetype"); }
+@font-face { font-family: "HenrytaBradley"; src: url("./assets/ifonts/Henryta_Bradley.ttf") format("truetype"); }
+@font-face { font-family: "Hosera"; src: url("./assets/ifonts/Hosera.ttf") format("truetype"); }
+@font-face { font-family: "LucentiRomance"; src: url("./assets/ifonts/LucentiRomance.ttf") format("truetype"); }
+@font-face { font-family: "Modesta"; src: url("./assets/ifonts/MODESTA.ttf") format("truetype"); }
+@font-face { font-family: "MartinLangley"; src: url("./assets/ifonts/MartinLangley.ttf") format("truetype"); }
+@font-face { font-family: "Maung"; src: url("./assets/ifonts/Maung.ttf") format("truetype"); }
+@font-face { font-family: "MelodySunday"; src: url("./assets/ifonts/Melody_Sunday.ttf") format("truetype"); }
+@font-face { font-family: "MelonaWoman"; src: url("./assets/ifonts/MelonaWoman.ttf") format("truetype"); }
+@font-face { font-family: "MetroLuxes"; src: url("./assets/ifonts/Metro_Luxes.ttf") format("truetype"); }
+@font-face { font-family: "MichaelCarsl"; src: url("./assets/ifonts/MichaelCarsl.ttf") format("truetype"); }
+@font-face { font-family: "Misadon"; src: url("./assets/ifonts/Misadon.ttf") format("truetype"); }
+@font-face { font-family: "Monse"; src: url("./assets/ifonts/Monse.ttf") format("truetype"); }
+@font-face { font-family: "Mooulena"; src: url("./assets/ifonts/Mooulena.ttf") format("truetype"); }
+@font-face { font-family: "Morase"; src: url("./assets/ifonts/Morase.ttf") format("truetype"); }
+@font-face { font-family: "Overides"; src: url("./assets/ifonts/Overides.ttf") format("truetype"); }
+@font-face { font-family: "PottelikaKinetics"; src: url("./assets/ifonts/Pottelika_Kinetics.ttf") format("truetype"); }
+@font-face { font-family: "Quick"; src: url("./assets/ifonts/Quick.ttf") format("truetype"); }
+@font-face { font-family: "Rimons"; src: url("./assets/ifonts/RIMONS.ttf") format("truetype"); }
+@font-face { font-family: "RawPixel"; src: url("./assets/ifonts/RawPixel.ttf") format("truetype"); }
+@font-face { font-family: "RecitalsBrush"; src: url("./assets/ifonts/Recitals_Brush.ttf") format("truetype"); }
+@font-face { font-family: "Relington"; src: url("./assets/ifonts/Relington.ttf") format("truetype"); }
+@font-face { font-family: "Rocklords"; src: url("./assets/ifonts/Rocklords.ttf") format("truetype"); }
+@font-face { font-family: "Stirle"; src: url("./assets/ifonts/Stirle.ttf") format("truetype"); }
+@font-face { font-family: "Summer"; src: url("./assets/ifonts/Summer.ttf") format("truetype"); }
+@font-face { font-family: "TheChrisera"; src: url("./assets/ifonts/TheChrisera.ttf") format("truetype"); }
+@font-face { font-family: "TheBonesZombie"; src: url("./assets/ifonts/The_Bones_Zombie.ttf") format("truetype"); }
+@font-face { font-family: "TheXamber"; src: url("./assets/ifonts/The_Xamber.ttf") format("truetype"); }
+@font-face { font-family: "TornFlesh"; src: url("./assets/ifonts/Torn_Flesh.ttf") format("truetype"); }
+@font-face { font-family: "Unida"; src: url("./assets/ifonts/UNIDA.ttf") format("truetype"); }
+@font-face { font-family: "VandalSoulShadow"; src: url("./assets/ifonts/Vandal_Soul_Shadow.ttf") format("truetype"); }
+@font-face { font-family: "Viplind"; src: url("./assets/ifonts/Viplind.ttf") format("truetype"); }
+@font-face { font-family: "WangorAsfrac"; src: url("./assets/ifonts/Wangor_Asfrac.ttf") format("truetype"); }
+@font-face { font-family: "Zukoline"; src: url("./assets/ifonts/Zukoline.ttf") format("truetype"); }
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;

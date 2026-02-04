@@ -11,6 +11,9 @@ const SvgCreator = (function(){
 
   let brushColor = "#000000";
   let brushType = "pixel"; // pen | pixel
+let zoom = 1;
+const MIN_ZOOM = 0.5;
+const MAX_ZOOM = 5;
 
   let paths = [];   // pen strokes
   let pixels = {}; // pixel grid { "x_y": color }
@@ -25,11 +28,13 @@ const SvgCreator = (function(){
     canvas.height = CANVAS_SIZE;
     canvas.style.touchAction = "none";
     canvas.style.imageRendering = "pixelated";
+canvas.addEventListener("wheel", handleZoom, { passive: false });
 
     canvas.addEventListener("pointerdown", startDraw);
     canvas.addEventListener("pointermove", drawMove);
     canvas.addEventListener("pointerup", endDraw);
     canvas.addEventListener("pointercancel", endDraw);
+canvas.addEventListener("wheel", handleZoom);
 
     const colorInput = document.getElementById("svgBrushColor");
     if(colorInput){
@@ -62,6 +67,18 @@ const SvgCreator = (function(){
     brushType = type;
     redraw();
   }
+function handleZoom(e){
+  e.preventDefault();
+
+  const delta = e.deltaY > 0 ? -0.1 : 0.1;
+  zoom += delta;
+
+  if (zoom < MIN_ZOOM) zoom = MIN_ZOOM;
+  if (zoom > MAX_ZOOM) zoom = MAX_ZOOM;
+
+  redraw();
+}
+
 
   /* ================= DRAW ================= */
 
@@ -107,16 +124,32 @@ const SvgCreator = (function(){
 
   /* ================= RENDER ================= */
 
-  function redraw(){
-    ctx.clearRect(0,0,CANVAS_SIZE,CANVAS_SIZE);
+function redraw(){
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.clearRect(0,0,CANVAS_SIZE,CANVAS_SIZE);
 
-    if(brushType === "pixel"){
-      drawGrid();
-      drawPixels();
-    } else {
-      drawPaths();
-    }
+  // CLIP canvas (không vẽ ra ngoài)
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(0,0,CANVAS_SIZE,CANVAS_SIZE);
+  ctx.clip();
+
+  // zoom từ giữa canvas
+  ctx.translate(CANVAS_SIZE/2, CANVAS_SIZE/2);
+  ctx.scale(zoom, zoom);
+  ctx.translate(-CANVAS_SIZE/2, -CANVAS_SIZE/2);
+
+  if(brushType === "pixel"){
+    drawGrid();
+    drawPixels();
+  } else {
+    drawPaths();
   }
+
+  ctx.restore();
+}
+
+
 
   function drawGrid(){
     ctx.strokeStyle = "#ddd";
@@ -158,13 +191,22 @@ const SvgCreator = (function(){
     });
   }
 
-  function getPos(e){
-    const rect = canvas.getBoundingClientRect();
-    return {
-      x:(e.clientX-rect.left)*(CANVAS_SIZE/rect.width),
-      y:(e.clientY-rect.top)*(CANVAS_SIZE/rect.height)
-    };
-  }
+ function getPos(e){
+  const rect = canvas.getBoundingClientRect();
+
+  const x = (e.clientX - rect.left) * (CANVAS_SIZE / rect.width);
+  const y = (e.clientY - rect.top) * (CANVAS_SIZE / rect.height);
+
+  // quy về center zoom
+  const cx = CANVAS_SIZE / 2;
+  const cy = CANVAS_SIZE / 2;
+
+  return {
+    x: (x - cx) / zoom + cx,
+    y: (y - cy) / zoom + cy
+  };
+}
+
 
   /* ================= IMAGE UPLOAD ================= */
 
@@ -243,29 +285,58 @@ const SvgCreator = (function(){
     redraw();
   }
 
-  function confirm(){
-    let svg = `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">`;
-    const scale = 64 / CANVAS_SIZE;
+ function confirm(){
 
-    for(let key in pixels){
-      const [x,y] = key.split("_").map(Number);
-      svg += `<rect x="${x*CELL*scale}" y="${y*CELL*scale}" width="${CELL*scale}" height="${CELL*scale}" fill="${pixels[key]}" />`;
+  const viewSize = CANVAS_SIZE / zoom;
+  const offset = (CANVAS_SIZE - viewSize) / 2;
+
+  let svg = `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">`;
+  const scale = 64 / viewSize;
+
+  // export pixels trong vùng crop
+  for(let key in pixels){
+    const [x,y] = key.split("_").map(Number);
+
+    const px = x * CELL;
+    const py = y * CELL;
+
+    // chỉ lấy pixel nằm trong vùng zoom
+    if(
+      px >= offset && px <= offset + viewSize &&
+      py >= offset && py <= offset + viewSize
+    ){
+      const nx = (px - offset) * scale;
+      const ny = (py - offset) * scale;
+
+      svg += `<rect x="${nx}" y="${ny}" width="${CELL*scale}" height="${CELL*scale}" fill="${pixels[key]}" />`;
     }
+  }
 
-    paths.forEach(p=>{
-      let d = `M ${p.points[0].x*scale} ${p.points[0].y*scale}`;
-      p.points.forEach(pt=>{
-        d+=` L ${pt.x*scale} ${pt.y*scale}`;
-      });
-      svg += `<path d="${d}" fill="none" stroke="${p.color}" stroke-width="2" stroke-linecap="round"/>`;
+  // export paths (nếu có)
+  paths.forEach(p=>{
+    let validPoints = p.points.filter(pt=>{
+      return (
+        pt.x >= offset && pt.x <= offset + viewSize &&
+        pt.y >= offset && pt.y <= offset + viewSize
+      );
     });
 
-    svg += `</svg>`;
+    if(validPoints.length > 1){
+      let d = `M ${(validPoints[0].x-offset)*scale} ${(validPoints[0].y-offset)*scale}`;
+      validPoints.forEach(pt=>{
+        d+=` L ${(pt.x-offset)*scale} ${(pt.y-offset)*scale}`;
+      });
+      svg += `<path d="${d}" fill="none" stroke="${p.color}" stroke-width="2" stroke-linecap="round"/>`;
+    }
+  });
 
-    themeData.icons[currentIconKey] = svg.replace(/"/g,"'");
-    close();
-    renderForm();
-  }
+  svg += `</svg>`;
+
+  themeData.icons[currentIconKey] = svg.replace(/"/g,"'");
+  close();
+  renderForm();
+}
+
 
   return {
     init,
