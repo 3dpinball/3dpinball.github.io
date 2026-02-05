@@ -21,6 +21,17 @@ const MAX_ZOOM = 5;
   /* ================= INIT ================= */
 
   function init(){
+const alphaInput = document.getElementById("svgBrushAlpha");
+const alphaValue = document.getElementById("alphaValue");
+
+if(alphaInput){
+  alphaInput.addEventListener("input", e=>{
+    brushAlpha = parseFloat(e.target.value);
+    alphaValue.textContent = brushAlpha;
+  });
+}
+
+
     canvas = document.getElementById("svgCanvas");
     ctx = canvas.getContext("2d");
 
@@ -54,7 +65,7 @@ canvas.addEventListener("wheel", handleZoom);
   function open(key){
     currentIconKey = key;
     document.getElementById("svgCreatorModal").classList.remove("hidden");
-    clear();
+  redraw();
   }
 
   function close(){
@@ -103,11 +114,13 @@ function handleZoom(e){
     const pos = getPos(e);
 
     if(brushType === "pixel"){
-      const gx = Math.floor(pos.x / CELL);
-      const gy = Math.floor(pos.y / CELL);
-      const key = `${gx}_${gy}`;
-      pixels[key] = brushColor;
-    } else {
+  const gx = Math.floor(pos.x / CELL);
+  const gy = Math.floor(pos.y / CELL);
+  const key = `${gx}_${gy}`;
+
+  pixels[key] = hexToRgba(brushColor, brushAlpha);
+}
+ else {
       let last = paths[paths.length-1];
       if(!drawing || !last){
         paths.push({
@@ -169,6 +182,13 @@ function redraw(){
       ctx.stroke();
     }
   }
+  function hexToRgba(hex, alpha){
+  const r = parseInt(hex.slice(1,3),16);
+  const g = parseInt(hex.slice(3,5),16);
+  const b = parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
 
   function drawPixels(){
     for(let key in pixels){
@@ -244,7 +264,6 @@ function redraw(){
 
   function importImageToPixels(){
     const imgData = ctx.getImageData(0,0,CANVAS_SIZE,CANVAS_SIZE).data;
-    pixels = {};
 
     for(let y=0;y<GRID;y++){
       for(let x=0;x<GRID;x++){
@@ -257,10 +276,11 @@ function redraw(){
         const b = imgData[i+2];
         const a = imgData[i+3];
 
-        if(a > 50){
-          const color = `rgb(${r},${g},${b})`;
-          pixels[`${x}_${y}`] = color;
-        }
+       if(a > 0){
+  const color = `rgba(${r},${g},${b},${a/255})`;
+  pixels[`${x}_${y}`] = color;
+}
+
       }
     }
 

@@ -1,6 +1,8 @@
 let themeData = {};
 let oldColors = {};
 let oldIcons = {};
+let brushColor = "#000000";
+let brushAlpha = 1; // 0 → 1
 
 let globalFillColor = null;
 let globalStrokeColor = null;
