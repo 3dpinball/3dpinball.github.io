@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "iconSets": [
+    {
+      "id": "neon_icon",
+      "name": "Neon",
+      "sheet": "https://3dpinball.github.io/themes/neon.png",
+      "cell": 64,
+      "cols": 2
+    }
+  ]
+}
