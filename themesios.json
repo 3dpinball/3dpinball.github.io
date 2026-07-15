@@ -1,12 +1,13 @@
 {
   "version": 4,
   "iconSets": [
-     {
+    {
       "id": "3d_icon",
       "name": "3D Classic",
       "sheet": "https://3dpinball.github.io/themes/classic3d.png",
       "cell": 64,
-      "cols": 2
+      "cols": 2,
+      "vip": 1
     }
   ]
 }
