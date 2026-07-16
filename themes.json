@@ -1,14 +1,12 @@
 {
   "version": 5,
   "iconSets": [
-     {
-      "id": "3d_icon",
-      "name": "3D Classic",
-      "sheet": "https://3dpinball.github.io/themes/classic3d.png",
-      "cell": 64,
-      "cols": 2
-    }
-    ,
+    {
+      "id": "Neon_icon",
+      "name": "Neon",
+      "sheet": "https://3dpinball.github.io/themesios/neon.png",
+      "cell": 64
+    },
     {
       "id": "modern_icon",
       "name": "Modern Classic",
