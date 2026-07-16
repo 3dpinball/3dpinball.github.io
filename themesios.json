@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "iconSets": [
     {
       "id": "3d_icon",
@@ -8,6 +8,14 @@
       "cell": 64,
       "cols": 2,
       "vip": 1
+    },
+    {
+      "id": "modern_icon",
+      "name": "Modern Classic",
+      "sheet": "https://3dpinball.github.io/themesios/modern.png",
+      "cell": 64,
+      "cols": 2,
+      "vip": 0
     }
   ]
 }
