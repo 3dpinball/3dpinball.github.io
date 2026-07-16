@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "iconSets": [
     {
       "id": "Neon_icon",
@@ -16,6 +16,14 @@
       "cell": 64,
       "cols": 2,
       "vip": 0
+    },
+    {
+      "id": "modern_kitty_icon",
+      "name": "Modern Kitty",
+      "sheet": "https://3dpinball.github.io/themesios/modern-kitty.png",
+      "cell": 64,
+      "cols": 2,
+      "vip": 1
     }
   ]
 }
