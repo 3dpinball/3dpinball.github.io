@@ -27,13 +27,6 @@
       "sheet": "https://3dpinball.github.io/themesios/matcha.png",
       "cell": 64,
       "cols": 2
-    },
-    {
-      "id": "japan_icon",
-      "name": "Japan",
-      "sheet": "https://3dpinball.github.io/themesios/japan.png",
-      "cell": 64,
-      "cols": 2
     }
   ]
 }
