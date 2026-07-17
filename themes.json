@@ -20,6 +20,13 @@
       "sheet": "https://3dpinball.github.io/themesios/modern-kitty.png",
       "cell": 64,
       "cols": 2
+    },
+    {
+      "id": "matcha_icon",
+      "name": "Matcha",
+      "sheet": "https://3dpinball.github.io/themesios/matcha.png",
+      "cell": 64,
+      "cols": 2
     }
   ]
 }
