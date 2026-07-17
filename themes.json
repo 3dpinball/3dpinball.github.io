@@ -20,13 +20,6 @@
       "sheet": "https://3dpinball.github.io/themesios/modern-kitty.png",
       "cell": 64,
       "cols": 2
-    },
-    {
-      "id": "ninja_icon",
-      "name": "Ninja",
-      "sheet": "https://3dpinball.github.io/themesios/ninja.png",
-      "cell": 64,
-      "cols": 2
     }
   ]
 }
