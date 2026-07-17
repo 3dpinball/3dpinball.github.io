@@ -33,6 +33,14 @@
       "cell": 64,
       "cols": 2,
       "vip": 0
+    },
+    {
+      "id": "sakura_icon",
+      "name": "Sakura",
+      "sheet": "https://3dpinball.github.io/themesios/sakura.png",
+      "cell": 64,
+      "cols": 2,
+      "vip": 1
     }
   ]
 }
