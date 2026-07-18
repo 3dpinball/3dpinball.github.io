@@ -34,6 +34,13 @@
       "sheet": "https://3dpinball.github.io/themesios/sakura.png",
       "cell": 64,
       "cols": 2
+    },
+    {
+      "id": "noel_icon",
+      "name": "Noel",
+      "sheet": "https://3dpinball.github.io/themesios/noel.png",
+      "cell": 64,
+      "cols": 2
     }
   ]
 }
