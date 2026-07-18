@@ -41,6 +41,14 @@
       "cell": 64,
       "cols": 2,
       "vip": 1
+    },
+    {
+      "id": "noel_icon",
+      "name": "Noel",
+      "sheet": "https://3dpinball.github.io/themesios/noel.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
     }
   ]
 }
