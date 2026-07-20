@@ -58,6 +58,14 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
+    } ,
+    {
+      "id": "ruby_icon",
+      "name": "Ruby",
+      "sheet": "https://3dpinball.github.io/themesios/ruby.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :1
     }
   ]
 }
