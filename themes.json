@@ -58,6 +58,14 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
-    } 
+    } ,
+    {
+      "id": "bubble_icon",
+      "name": "Bubble",
+      "sheet": "https://3dpinball.github.io/themesios/bubble.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
+    }
   ]
 }
