@@ -58,14 +58,6 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
-    } ,
-    {
-      "id": "summer_icon",
-      "name": "Summer",
-      "sheet": "https://3dpinball.github.io/themesios/summer.png",
-      "cell": 64,
-      "cols": 2,
-      "vip" :0
     }
   ]
 }
