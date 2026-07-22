@@ -50,14 +50,6 @@
       "cols": 2,
       "vip" :0
     }
-    ,
-    {
-      "id": "ice_icon",
-      "name": "Ice",
-      "sheet": "https://3dpinball.github.io/themesios/ice.png",
-      "cell": 64,
-      "cols": 2,
-      "vip" :1
-    }
+   
   ]
 }
