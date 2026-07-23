@@ -66,6 +66,22 @@
       "cell": 64,
       "cols": 2,
       "vip" :0
+    },
+    {
+      "id": "material_black_icon",
+      "name": "Material Black",
+      "sheet": "https://3dpinball.github.io/themesios/material_black.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
+    },
+    {
+      "id": "material_white_icon",
+      "name": "Material White",
+      "sheet": "https://3dpinball.github.io/themesios/material_white.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
     }
   ]
 }
