@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "iconSets": [
      {
       "id": "Neon_icon",
@@ -58,14 +58,6 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
-    },
-    {
-      "id": "lava_icon",
-      "name": "Lava",
-      "sheet": "https://3dpinball.github.io/themesios/lava.png",
-      "cell": 64,
-      "cols": 2,
-      "vip" :0
     }
   ]
 }
