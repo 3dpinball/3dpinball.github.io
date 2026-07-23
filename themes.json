@@ -66,6 +66,14 @@
       "cell": 64,
       "cols": 2,
       "vip" :0
+    },
+    {
+      "id": "material_icon",
+      "name": "Material",
+      "sheet": "https://3dpinball.github.io/themesios/material.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
     }
   ]
 }
