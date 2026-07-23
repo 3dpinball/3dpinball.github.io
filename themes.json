@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "iconSets": [
      {
       "id": "Neon_icon",
@@ -58,6 +58,14 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
+    },
+    {
+      "id": "spring_icon",
+      "name": "Spring",
+      "sheet": "https://3dpinball.github.io/themesios/spring.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
     }
   ]
 }
