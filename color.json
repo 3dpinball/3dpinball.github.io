@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "palettes": [
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#FFF3E9",
+        "panelBackground": "#FFD9B3",
+        "toolbarBackground": "#FFD9B3",
+        "canvasBackground": "#FFF3E9",
+        "toolButtonBorderLight": "#FFE8D1",
+        "toolButtonBorderDark": "#C2632A",
+        "toolButtonHighlight": "#FFEEDD",
+        "toolButtonFace": "#FFD9B3",
+        "textPrimary": "#7A2E12",
+        "textDisabled": "#B08968",
+        "sliderThumbColor": "#E8622A",
+        "sliderActiveTrack": "#F5915B",
+        "sliderInactiveTrack": "#E9C3A6",
+        "selectionBackground": "#C2401A",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#A8341A",
+        "accent": "#E8622A"
+      }
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean",
+      "colors": {
+        "windowBackground": "#E8F6F8",
+        "panelBackground": "#BEE3E8",
+        "toolbarBackground": "#BEE3E8",
+        "canvasBackground": "#E8F6F8",
+        "toolButtonBorderLight": "#D6EFF2",
+        "toolButtonBorderDark": "#2E6E7A",
+        "toolButtonHighlight": "#E0F4F7",
+        "toolButtonFace": "#BEE3E8",
+        "textPrimary": "#0E4A54",
+        "textDisabled": "#6E9AA0",
+        "sliderThumbColor": "#1C8FA0",
+        "sliderActiveTrack": "#4FBCCB",
+        "sliderInactiveTrack": "#A9D6DD",
+        "selectionBackground": "#0E5C68",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#0B4650",
+        "accent": "#1C8FA0"
+      }
+    },
+    {
+      "id": "rose_partial",
+      "name": "Rose",
+      "colors": {
+        "panelBackground": "#F4B6CF",
+        "toolbarBackground": "#F4B6CF",
+        "toolbarHeader": "#7A1F4A",
+        "accent": "#8B2C5B",
+        "sliderThumbColor": "#B84D7A"
+      }
+    }
+  ]
+}
