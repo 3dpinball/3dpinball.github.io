@@ -28,6 +28,7 @@
     {
       "id": "ocean",
       "name": "Ocean",
+    "fontFamily": "EastKindLight",
       "colors": {
         "windowBackground": "#E8F6F8",
         "panelBackground": "#BEE3E8",
@@ -46,17 +47,6 @@
         "selectionForeground": "#FFFFFF",
         "toolbarHeader": "#0B4650",
         "accent": "#1C8FA0"
-      }
-    },
-    {
-      "id": "rose_partial",
-      "name": "Rose",
-      "colors": {
-        "panelBackground": "#F4B6CF",
-        "toolbarBackground": "#F4B6CF",
-        "toolbarHeader": "#7A1F4A",
-        "accent": "#8B2C5B",
-        "sliderThumbColor": "#B84D7A"
       }
     }
   ]
