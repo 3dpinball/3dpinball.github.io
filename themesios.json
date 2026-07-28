@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "iconSets": [
      {
       "id": "Neon_icon",
@@ -74,6 +74,14 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
+    },
+    {
+      "id": "scribby_icon",
+      "name": "Scribby",
+      "sheet": "https://3dpinball.github.io/themesios/scribby.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
     }
   ]
 }
