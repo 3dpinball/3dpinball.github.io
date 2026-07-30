@@ -240,6 +240,30 @@
         "toolbarHeader": "#B8221C",
         "accent": "#E0A82E"
       }
+    },
+    {
+      "id": "liquidglass",
+      "name": "Liquid Glass",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#0B0E14",
+        "panelBackground": "#161B24",
+        "toolbarBackground": "#161B24",
+        "canvasBackground": "#06080C",
+        "toolButtonBorderLight": "#2E3742",
+        "toolButtonBorderDark": "#05070A",
+        "toolButtonHighlight": "#222A35",
+        "toolButtonFace": "#161B24",
+        "textPrimary": "#EAF0F7",
+        "textDisabled": "#7A8698",
+        "sliderThumbColor": "#FFFFFF",
+        "sliderActiveTrack": "#6FD3FF",
+        "sliderInactiveTrack": "#2A323D",
+        "selectionBackground": "#5B7CFF",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#5B7CFF",
+        "accent": "#6FD3FF"
+      }
     }
   ]
 }
