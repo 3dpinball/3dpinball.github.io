@@ -83,5 +83,14 @@
       "cols": 2,
       "vip" :0
     }
+    ,
+    {
+      "id": "Liquid_Glass_icon",
+      "name": "Liquid Glass",
+      "sheet": "https://3dpinball.github.io/themesios/liquidglass.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :1
+    }
   ]
 }
