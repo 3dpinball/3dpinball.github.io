@@ -30,7 +30,7 @@
       "name": "Neon",
       "fontFamily": "EastKindLight",
       "colors": {
-        "windowBackground": "#0A0612",
+        "windowBackground": "#EDE8F6",
         "panelBackground": "#170D26",
         "toolbarBackground": "#170D26",
         "canvasBackground": "#060010",
@@ -246,7 +246,7 @@
       "name": "Liquid Glass",
       "fontFamily": "EastKindLight",
       "colors": {
-        "windowBackground": "#0B0E14",
+        "windowBackground": "#EAEEF4",
         "panelBackground": "#161B24",
         "toolbarBackground": "#161B24",
         "canvasBackground": "#06080C",
