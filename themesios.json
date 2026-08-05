@@ -68,6 +68,15 @@
       "cell": 64,
       "cols": 2,
       "vip" :1
+    } ,
+  
+    {
+      "id": "sticker_icon",
+      "name": "Sticker",
+      "sheet": "https://3dpinball.github.io/themesios/sticker.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
     } 
   ]
 }
