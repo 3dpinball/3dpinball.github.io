@@ -1,35 +1,11 @@
 {
-  "version": 12,
+  "version": 13,
   "iconSets": [
-     {
-      "id": "Neon_icon",
-      "name": "Neon",
-      "sheet": "https://3dpinball.github.io/themesios/neon.png",
-      "cell": 64,
-      "cols": 2,
-      "vip": 1
-    }
-   ,
-    {
-      "id": "modern_icon",
-      "name": "Modern",
-      "sheet": "https://3dpinball.github.io/themesios/modern.png",
-      "cell": 64,
-      "cols": 2,
-      "vip": 0
-    },
+     
     {
       "id": "modern_kitty_icon",
       "name": "Kitty",
       "sheet": "https://3dpinball.github.io/themesios/modern-kitty.png",
-      "cell": 64,
-      "cols": 2,
-      "vip": 1
-    },
-    {
-      "id": "matcha_icon",
-      "name": "Matcha",
-      "sheet": "https://3dpinball.github.io/themesios/matcha.png",
       "cell": 64,
       "cols": 2,
       "vip": 0
@@ -67,23 +43,7 @@
       "cols": 2,
       "vip" :0
     },
-    {
-      "id": "tet_icon",
-      "name": "Tết",
-      "sheet": "https://3dpinball.github.io/themesios/tet.png",
-      "cell": 64,
-      "cols": 2,
-      "vip" :1
-    },
-    {
-      "id": "scribby_icon",
-      "name": "Scribby",
-      "sheet": "https://3dpinball.github.io/themesios/scribby1.png",
-      "cell": 64,
-      "cols": 2,
-      "vip" :0
-    } ,
-    {
+      {
       "id": "colorpixel_icon",
       "name": "Color Pixel",
       "sheet": "https://3dpinball.github.io/themesios/colorpixel.png",
@@ -92,6 +52,15 @@
       "vip" :1
     } 
     ,
+    {
+      "id": "scribby_icon",
+      "name": "Scribby",
+      "sheet": "https://3dpinball.github.io/themesios/scribby1.png",
+      "cell": 64,
+      "cols": 2,
+      "vip" :0
+    } ,
+  
     {
       "id": "sci_fi_icon",
       "name": "Sci Fi",
