@@ -144,6 +144,150 @@
         "toolbarHeader": "#1E9E52",
         "accent": "#3ECB6E"
       }
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#FFF4EF",
+        "panelBackground": "#FBC9C0",
+        "toolbarBackground": "#FBC9C0",
+        "canvasBackground": "#4A1E4E",
+        "toolButtonBorderLight": "#FFE3DC",
+        "toolButtonBorderDark": "#D77A8A",
+        "toolButtonHighlight": "#FFEEE9",
+        "toolButtonFace": "#FBC9C0",
+        "textPrimary": "#5E243F",
+        "textDisabled": "#BC8592",
+        "sliderThumbColor": "#FF6F61",
+        "sliderActiveTrack": "#FFB25E",
+        "sliderInactiveTrack": "#E8B4B0",
+        "selectionBackground": "#C74B7E",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#C74B7E",
+        "accent": "#FF6F61"
+      }
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#0C1420",
+        "panelBackground": "#0A1A24",
+        "toolbarBackground": "#0A1A24",
+        "canvasBackground": "#050C12",
+        "toolButtonBorderLight": "#1F3A44",
+        "toolButtonBorderDark": "#060E14",
+        "toolButtonHighlight": "#14262E",
+        "toolButtonFace": "#0A1A24",
+        "textPrimary": "#E6F4EF",
+        "textDisabled": "#779692",
+        "sliderThumbColor": "#3FE0A8",
+        "sliderActiveTrack": "#5AC8FA",
+        "sliderInactiveTrack": "#1E3038",
+        "selectionBackground": "#7A5CFF",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#3FE0A8",
+        "accent": "#7A5CFF"
+      }
+    },
+    {
+      "id": "miami",
+      "name": "Miami",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#FFF2FA",
+        "panelBackground": "#FBC4E2",
+        "toolbarBackground": "#FBC4E2",
+        "canvasBackground": "#2A2560",
+        "toolButtonBorderLight": "#FFDDF0",
+        "toolButtonBorderDark": "#C76BA0",
+        "toolButtonHighlight": "#FFEBF6",
+        "toolButtonFace": "#FBC4E2",
+        "textPrimary": "#5A2352",
+        "textDisabled": "#B37FA0",
+        "sliderThumbColor": "#FF4FA3",
+        "sliderActiveTrack": "#35D6E0",
+        "sliderInactiveTrack": "#E8AACF",
+        "selectionBackground": "#8A4FE0",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#FF4FA3",
+        "accent": "#35D6E0"
+      }
+    },
+    {
+      "id": "tropical",
+      "name": "Tropical",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#F0FBF4",
+        "panelBackground": "#B8E6CE",
+        "toolbarBackground": "#B8E6CE",
+        "canvasBackground": "#0E4A3E",
+        "toolButtonBorderLight": "#D8F2E4",
+        "toolButtonBorderDark": "#4A9E7E",
+        "toolButtonHighlight": "#E8F8EF",
+        "toolButtonFace": "#B8E6CE",
+        "textPrimary": "#10473C",
+        "textDisabled": "#6BA391",
+        "sliderThumbColor": "#FFC93C",
+        "sliderActiveTrack": "#34D399",
+        "sliderInactiveTrack": "#9BCBB6",
+        "selectionBackground": "#10B981",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#0E9E76",
+        "accent": "#FFC93C"
+      }
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#120A24",
+        "panelBackground": "#1A0E30",
+        "toolbarBackground": "#1A0E30",
+        "canvasBackground": "#08040F",
+        "toolButtonBorderLight": "#33204F",
+        "toolButtonBorderDark": "#0A0518",
+        "toolButtonHighlight": "#241640",
+        "toolButtonFace": "#1A0E30",
+        "textPrimary": "#EFE6FF",
+        "textDisabled": "#9585B0",
+        "sliderThumbColor": "#FF5FA2",
+        "sliderActiveTrack": "#5FC8FF",
+        "sliderInactiveTrack": "#2A1C44",
+        "selectionBackground": "#9A5CFF",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#FF5FA2",
+        "accent": "#5FC8FF"
+      }
+    },
+    {
+      "id": "sorbet",
+      "name": "Sorbet",
+      "fontFamily": "EastKindLight",
+      "colors": {
+        "windowBackground": "#FFF6F0",
+        "panelBackground": "#FCD9C0",
+        "toolbarBackground": "#FCD9C0",
+        "canvasBackground": "#4A3F6B",
+        "toolButtonBorderLight": "#FFEADD",
+        "toolButtonBorderDark": "#D69A7E",
+        "toolButtonHighlight": "#FFF2EA",
+        "toolButtonFace": "#FCD9C0",
+        "textPrimary": "#6B4152",
+        "textDisabled": "#C09A94",
+        "sliderThumbColor": "#FF9AA2",
+        "sliderActiveTrack": "#A0E7C8",
+        "sliderInactiveTrack": "#E9C6B4",
+        "selectionBackground": "#9575CD",
+        "selectionForeground": "#FFFFFF",
+        "toolbarHeader": "#E5798A",
+        "accent": "#FF9AA2"
+      }
     }
   ]
 }
