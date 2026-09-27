@@ -1,642 +1,172 @@
 {
-  "version": 4,
+  "version": 5,
   "_doc": [
-    "Chủ đề BUMPER của game 3D Pinball (Android/iOS). App tải file này lúc mở màn Home rồi tải ảnh về máy.",
-    "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, rồi thêm một khối vào mảng themes bên dưới,",
-    "cuối cùng TĂNG 'version' lên 1 để app biết có thay đổi mà tải lại.",
-    "Ảnh chóp: 512x512 (webp hoặc png). Phần nhìn thấy trên chóp bumper là HÌNH TRÒN NỘI TIẾP của ảnh,",
-    "4 góc không bao giờ hiện ra. Màu + hình + khối/bóng nằm sẵn trong ảnh.",
-    "banner: ảnh VUÔNG hiện ở khung chọn chủ đề ngoài màn Home (PNG, nên 512x512), nằm trong thư mục chủ đề.",
+    "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
+    "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
+    "rồi TĂNG 'version' lên 1 để app biết có thay đổi (app sẽ hiện nhãn NEW).",
+    "Ảnh chóp: 512x512 (webp/png). Phần NHÌN THẤY là HÌNH TRÒN NỘI TIẾP của ảnh, 4 góc không bao giờ hiện ra.",
+    "Màu + hình + khối/bóng nằm sẵn trong ảnh; engine không tô màu thêm lên ảnh chóp.",
+    "banner: ảnh VUÔNG 512x512 (PNG) hiện ở khung chọn chủ đề ngoài màn Home.",
     "Mỗi bumper 1..7 khai: image (tên file trong baseUrl; nhiều bumper dùng chung 1 file cũng được),",
-    "base = màu thân, skirt = màu váy, ring = màu vòng kim loại.",
-    "Màu là chuỗi hex RRGGBB; null = giữ nguyên màu gốc của bàn.",
-    "LƯU Ý: 'ring' gần như không thấy vì vòng của engine bị chóp che; muốn đổi vành gai thì sửa ảnh chóp.",
-    "vip: 1 = chỉ người mua VIP dùng được, 0 = miễn phí.",
-    "ads: 1 = phải xem 1 quảng cáo thưởng mới mở khoá (tải) được chủ đề, 0 = tải tự do. Người mua VIP luôn được bỏ qua quảng cáo.",
+    "base = màu thân bumper, skirt = màu váy, ring = màu vòng kim loại. Hex RRGGBB, null = giữ màu gốc của bàn.",
+    "LƯU Ý: 'ring' gần như không thấy vì vòng của engine bị chóp che; muốn đổi vành thì sửa ảnh chóp.",
+    "vip: 1 = chỉ người mua VIP dùng được. ads: 1 = phải xem quảng cáo thưởng mỗi ván (VIP được bỏ qua).",
     "Bố trí bàn: bumper1-3 = Attack (trên phải), bumper4 = Satellite (trên trái), bumper5-7 = Engine (dưới trái)."
   ],
   "themes": [
     {
-      "id": "rainbow",
-      "name": "Rainbow",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/rainbow/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "F22424",
-          "skirt": "990F0F",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "F2D524",
-          "skirt": "99850F",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "5FF224",
-          "skirt": "37990F",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "24F29A",
-          "skirt": "0F995E",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "249AF2",
-          "skirt": "0F5E99",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "5F24F2",
-          "skirt": "370F99",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "F224D5",
-          "skirt": "990F85",
-          "ring": null
-        }
-      }
-    },
-    {
       "id": "flower",
       "name": "Flower",
       "vip": 0,
-      "ads": 1,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower/",
       "banner": "banner.png",
       "bumpers": {
         "1": {
-          "image": "c1.webp",
-          "base": "F22424",
-          "skirt": "990F0F",
+          "image": "red.webp",
+          "base": "F22B24",
+          "skirt": "94100C",
           "ring": null
         },
         "2": {
-          "image": "c2.webp",
-          "base": "F2D524",
-          "skirt": "99850F",
+          "image": "orange.webp",
+          "base": "F28124",
+          "skirt": "94490C",
           "ring": null
         },
         "3": {
-          "image": "c3.webp",
-          "base": "5FF224",
-          "skirt": "37990F",
+          "image": "gold.webp",
+          "base": "F2CB24",
+          "skirt": "947A0C",
           "ring": null
         },
         "4": {
-          "image": "c4.webp",
-          "base": "24F29A",
-          "skirt": "0F995E",
+          "image": "green.webp",
+          "base": "28F224",
+          "skirt": "0F940C",
           "ring": null
         },
         "5": {
-          "image": "c5.webp",
-          "base": "249AF2",
-          "skirt": "0F5E99",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "5F24F2",
-          "skirt": "370F99",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "F224D5",
-          "skirt": "990F85",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower02",
-      "name": "Flower 2",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower02/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "F29524",
-          "skirt": "995A0F",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "9FF224",
-          "skirt": "62990F",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "24F25A",
-          "skirt": "0F9933",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "24DAF2",
-          "skirt": "0F8999",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "242AF2",
-          "skirt": "0F1399",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "CF24F2",
-          "skirt": "820F99",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "F22465",
-          "skirt": "990F3A",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower03",
-      "name": "Flower 3",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower03/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "E0F224",
-          "skirt": "8C990F",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "2FF224",
-          "skirt": "16990F",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "24F2CA",
-          "skirt": "0F997E",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "246AF2",
-          "skirt": "0F3E99",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "8F24F2",
-          "skirt": "570F99",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "F224A5",
-          "skirt": "990F65",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "F25424",
-          "skirt": "992F0F",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower04",
-      "name": "Flower 4",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower04/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "6FF224",
-          "skirt": "41990F",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "24F28A",
-          "skirt": "0F9953",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "24AAF2",
-          "skirt": "0F6999",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "4F24F2",
-          "skirt": "2C0F99",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "F224E5",
-          "skirt": "990F90",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "F22434",
-          "skirt": "990F1A",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "F2C524",
-          "skirt": "997B0F",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower05",
-      "name": "Flower 5",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower05/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "24F24A",
-          "skirt": "0F9928",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "24EAF2",
-          "skirt": "0F9499",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "243AF2",
-          "skirt": "0F1E99",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "BF24F2",
-          "skirt": "770F99",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "F22475",
-          "skirt": "990F45",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "F28524",
-          "skirt": "99500F",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "AFF224",
-          "skirt": "6C990F",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower06",
-      "name": "Flower 6",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower06/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "24F2BA",
-          "skirt": "0F9973",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "247AF2",
-          "skirt": "0F4999",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "7F24F2",
-          "skirt": "4C0F99",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "F224B5",
-          "skirt": "990F70",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "F24424",
-          "skirt": "99250F",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "F0F224",
-          "skirt": "97990F",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "3FF224",
-          "skirt": "21990F",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower07",
-      "name": "Flower 7",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower07/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "24BAF2",
-          "skirt": "0F7399",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "3F24F2",
-          "skirt": "210F99",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "F024F2",
-          "skirt": "970F99",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "F22444",
-          "skirt": "990F25",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "F2B524",
-          "skirt": "99700F",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "7FF224",
-          "skirt": "4C990F",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "24F27A",
-          "skirt": "0F9949",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower08",
-      "name": "Flower 8",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower08/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "244AF2",
-          "skirt": "0F2899",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "AF24F2",
-          "skirt": "6C0F99",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "F22485",
-          "skirt": "990F50",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "F27524",
-          "skirt": "99450F",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "BFF224",
-          "skirt": "77990F",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "24F23A",
-          "skirt": "0F991E",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "24F2EA",
-          "skirt": "0F9994",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower09",
-      "name": "Flower 9",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower09/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "6F24F2",
-          "skirt": "410F99",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "F224C5",
-          "skirt": "990F7B",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "F23424",
-          "skirt": "991A0F",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "F2E524",
-          "skirt": "99900F",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "4FF224",
-          "skirt": "2C990F",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "24F2AA",
-          "skirt": "0F9969",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "248AF2",
-          "skirt": "0F5399",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower10",
-      "name": "Flower 10",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower10/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "E024F2",
-          "skirt": "8C0F99",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "F22454",
-          "skirt": "990F2F",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "F2A524",
-          "skirt": "99650F",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "8FF224",
-          "skirt": "57990F",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
-          "base": "24F26A",
-          "skirt": "0F993E",
-          "ring": null
-        },
-        "6": {
-          "image": "c6.webp",
-          "base": "24CAF2",
-          "skirt": "0F7E99",
-          "ring": null
-        },
-        "7": {
-          "image": "c7.webp",
-          "base": "2F24F2",
-          "skirt": "160F99",
-          "ring": null
-        }
-      }
-    },
-    {
-      "id": "flower11",
-      "name": "Flower 11",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower11/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "c1.webp",
-          "base": "F22495",
-          "skirt": "990F5A",
-          "ring": null
-        },
-        "2": {
-          "image": "c2.webp",
-          "base": "F26524",
-          "skirt": "993A0F",
-          "ring": null
-        },
-        "3": {
-          "image": "c3.webp",
-          "base": "CFF224",
-          "skirt": "82990F",
-          "ring": null
-        },
-        "4": {
-          "image": "c4.webp",
-          "base": "24F22A",
-          "skirt": "0F9913",
-          "ring": null
-        },
-        "5": {
-          "image": "c5.webp",
+          "image": "teal.webp",
           "base": "24F2DA",
-          "skirt": "0F9989",
+          "skirt": "0C9484",
           "ring": null
         },
         "6": {
-          "image": "c6.webp",
-          "base": "245AF2",
-          "skirt": "0F3399",
+          "image": "blue.webp",
+          "base": "2477F2",
+          "skirt": "0C4294",
           "ring": null
         },
         "7": {
-          "image": "c7.webp",
-          "base": "9F24F2",
-          "skirt": "620F99",
+          "image": "violet.webp",
+          "base": "B024F2",
+          "skirt": "680C94",
           "ring": null
+        }
+      }
+    },
+    {
+      "id": "mushroom",
+      "name": "Mushroom",
+      "vip": 0,
+      "ads": 1,
+      "baseUrl": "https://3dpinball.github.io/bumpers/mushroom/",
+      "banner": "banner.png",
+      "bumpers": {
+        "1": {
+          "image": "red.webp",
+          "base": "F22B24",
+          "skirt": "94100C",
+          "ring": "C9A227"
+        },
+        "2": {
+          "image": "orange.webp",
+          "base": "F28124",
+          "skirt": "94490C",
+          "ring": "C9A227"
+        },
+        "3": {
+          "image": "gold.webp",
+          "base": "F2CB24",
+          "skirt": "947A0C",
+          "ring": "C9A227"
+        },
+        "4": {
+          "image": "green.webp",
+          "base": "28F224",
+          "skirt": "0F940C",
+          "ring": "C9A227"
+        },
+        "5": {
+          "image": "teal.webp",
+          "base": "24F2DA",
+          "skirt": "0C9484",
+          "ring": "C9A227"
+        },
+        "6": {
+          "image": "blue.webp",
+          "base": "2477F2",
+          "skirt": "0C4294",
+          "ring": "C9A227"
+        },
+        "7": {
+          "image": "violet.webp",
+          "base": "B024F2",
+          "skirt": "680C94",
+          "ring": "C9A227"
+        }
+      }
+    },
+    {
+      "id": "koi",
+      "name": "Koi",
+      "vip": 0,
+      "ads": 1,
+      "baseUrl": "https://3dpinball.github.io/bumpers/koi/",
+      "banner": "banner.png",
+      "bumpers": {
+        "1": {
+          "image": "red.webp",
+          "base": "F22B24",
+          "skirt": "94100C",
+          "ring": "8FD4DE"
+        },
+        "2": {
+          "image": "orange.webp",
+          "base": "F28124",
+          "skirt": "94490C",
+          "ring": "8FD4DE"
+        },
+        "3": {
+          "image": "gold.webp",
+          "base": "F2CB24",
+          "skirt": "947A0C",
+          "ring": "8FD4DE"
+        },
+        "4": {
+          "image": "green.webp",
+          "base": "28F224",
+          "skirt": "0F940C",
+          "ring": "8FD4DE"
+        },
+        "5": {
+          "image": "teal.webp",
+          "base": "24F2DA",
+          "skirt": "0C9484",
+          "ring": "8FD4DE"
+        },
+        "6": {
+          "image": "blue.webp",
+          "base": "2477F2",
+          "skirt": "0C4294",
+          "ring": "8FD4DE"
+        },
+        "7": {
+          "image": "violet.webp",
+          "base": "B024F2",
+          "skirt": "680C94",
+          "ring": "8FD4DE"
         }
       }
     }
