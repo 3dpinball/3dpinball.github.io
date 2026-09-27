@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android/iOS). App tải file này lúc mở màn Home rồi tải ảnh về máy.",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, rồi thêm một khối vào mảng themes bên dưới,",
@@ -12,6 +12,7 @@
     "Màu là chuỗi hex RRGGBB; null = giữ nguyên màu gốc của bàn.",
     "LƯU Ý: 'ring' gần như không thấy vì vòng của engine bị chóp che; muốn đổi vành gai thì sửa ảnh chóp.",
     "vip: 1 = chỉ người mua VIP dùng được, 0 = miễn phí.",
+    "ads: 1 = phải xem 1 quảng cáo thưởng mới mở khoá (tải) được chủ đề, 0 = tải tự do. Người mua VIP luôn được bỏ qua quảng cáo.",
     "Bố trí bàn: bumper1-3 = Attack (trên phải), bumper4 = Satellite (trên trái), bumper5-7 = Engine (dưới trái)."
   ],
   "themes": [
@@ -19,6 +20,7 @@
       "id": "rainbow",
       "name": "Rainbow",
       "vip": 0,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/rainbow/",
       "banner": "banner.png",
       "bumpers": {
@@ -70,6 +72,7 @@
       "id": "flower",
       "name": "Flower",
       "vip": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower/",
       "banner": "banner.png",
       "bumpers": {
@@ -121,6 +124,7 @@
       "id": "flower02",
       "name": "Flower 2",
       "vip": 0,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower02/",
       "banner": "banner.png",
       "bumpers": {
@@ -172,6 +176,7 @@
       "id": "flower03",
       "name": "Flower 3",
       "vip": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower03/",
       "banner": "banner.png",
       "bumpers": {
@@ -223,6 +228,7 @@
       "id": "flower04",
       "name": "Flower 4",
       "vip": 0,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower04/",
       "banner": "banner.png",
       "bumpers": {
@@ -274,6 +280,7 @@
       "id": "flower05",
       "name": "Flower 5",
       "vip": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower05/",
       "banner": "banner.png",
       "bumpers": {
@@ -325,6 +332,7 @@
       "id": "flower06",
       "name": "Flower 6",
       "vip": 0,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower06/",
       "banner": "banner.png",
       "bumpers": {
@@ -376,6 +384,7 @@
       "id": "flower07",
       "name": "Flower 7",
       "vip": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower07/",
       "banner": "banner.png",
       "bumpers": {
@@ -427,6 +436,7 @@
       "id": "flower08",
       "name": "Flower 8",
       "vip": 0,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower08/",
       "banner": "banner.png",
       "bumpers": {
@@ -478,6 +488,7 @@
       "id": "flower09",
       "name": "Flower 9",
       "vip": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower09/",
       "banner": "banner.png",
       "bumpers": {
@@ -529,6 +540,7 @@
       "id": "flower10",
       "name": "Flower 10",
       "vip": 0,
+      "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower10/",
       "banner": "banner.png",
       "bumpers": {
@@ -580,6 +592,7 @@
       "id": "flower11",
       "name": "Flower 11",
       "vip": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/flower11/",
       "banner": "banner.png",
       "bumpers": {
