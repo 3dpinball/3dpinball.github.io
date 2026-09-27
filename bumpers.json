@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
@@ -23,43 +23,43 @@
       "banner": "banner.png",
       "bumpers": {
         "1": {
-          "image": "red.webp",
+          "image": "red.png",
           "base": "F22B24",
           "skirt": "94100C",
           "ring": null
         },
         "2": {
-          "image": "orange.webp",
+          "image": "orange.png",
           "base": "F28124",
           "skirt": "94490C",
           "ring": null
         },
         "3": {
-          "image": "gold.webp",
+          "image": "gold.png",
           "base": "F2CB24",
           "skirt": "947A0C",
           "ring": null
         },
         "4": {
-          "image": "green.webp",
+          "image": "green.png",
           "base": "28F224",
           "skirt": "0F940C",
           "ring": null
         },
         "5": {
-          "image": "teal.webp",
+          "image": "teal.png",
           "base": "24F2DA",
           "skirt": "0C9484",
           "ring": null
         },
         "6": {
-          "image": "blue.webp",
+          "image": "blue.png",
           "base": "2477F2",
           "skirt": "0C4294",
           "ring": null
         },
         "7": {
-          "image": "violet.webp",
+          "image": "violet.png",
           "base": "B024F2",
           "skirt": "680C94",
           "ring": null
@@ -75,43 +75,43 @@
       "banner": "banner.png",
       "bumpers": {
         "1": {
-          "image": "red.webp",
+          "image": "red.png",
           "base": "F22B24",
           "skirt": "94100C",
           "ring": "C9A227"
         },
         "2": {
-          "image": "orange.webp",
+          "image": "orange.png",
           "base": "F28124",
           "skirt": "94490C",
           "ring": "C9A227"
         },
         "3": {
-          "image": "gold.webp",
+          "image": "gold.png",
           "base": "F2CB24",
           "skirt": "947A0C",
           "ring": "C9A227"
         },
         "4": {
-          "image": "green.webp",
+          "image": "green.png",
           "base": "28F224",
           "skirt": "0F940C",
           "ring": "C9A227"
         },
         "5": {
-          "image": "teal.webp",
+          "image": "teal.png",
           "base": "24F2DA",
           "skirt": "0C9484",
           "ring": "C9A227"
         },
         "6": {
-          "image": "blue.webp",
+          "image": "blue.png",
           "base": "2477F2",
           "skirt": "0C4294",
           "ring": "C9A227"
         },
         "7": {
-          "image": "violet.webp",
+          "image": "violet.png",
           "base": "B024F2",
           "skirt": "680C94",
           "ring": "C9A227"
@@ -127,43 +127,43 @@
       "banner": "banner.png",
       "bumpers": {
         "1": {
-          "image": "red.webp",
+          "image": "red.png",
           "base": "F22B24",
           "skirt": "94100C",
           "ring": "8FD4DE"
         },
         "2": {
-          "image": "orange.webp",
+          "image": "orange.png",
           "base": "F28124",
           "skirt": "94490C",
           "ring": "8FD4DE"
         },
         "3": {
-          "image": "gold.webp",
+          "image": "gold.png",
           "base": "F2CB24",
           "skirt": "947A0C",
           "ring": "8FD4DE"
         },
         "4": {
-          "image": "green.webp",
+          "image": "green.png",
           "base": "28F224",
           "skirt": "0F940C",
           "ring": "8FD4DE"
         },
         "5": {
-          "image": "teal.webp",
+          "image": "teal.png",
           "base": "24F2DA",
           "skirt": "0C9484",
           "ring": "8FD4DE"
         },
         "6": {
-          "image": "blue.webp",
+          "image": "blue.png",
           "base": "2477F2",
           "skirt": "0C4294",
           "ring": "8FD4DE"
         },
         "7": {
-          "image": "violet.webp",
+          "image": "violet.png",
           "base": "B024F2",
           "skirt": "680C94",
           "ring": "8FD4DE"
