@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "_doc": [
+    "Chủ đề BUMPER của game 3D Pinball (Android/iOS). App tải file này lúc mở màn Home rồi tải ảnh về máy.",
+    "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, rồi thêm một khối vào mảng themes bên dưới,",
+    "cuối cùng TĂNG 'version' lên 1 để app biết có thay đổi mà tải lại.",
+    "Ảnh: 512x512 (webp hoặc png). Phần nhìn thấy trên chóp bumper là HÌNH TRÒN NỘI TIẾP của ảnh,",
+    "4 góc không bao giờ hiện ra. Màu + hình + khối/bóng nằm sẵn trong ảnh.",
+    "Mỗi bumper 1..7 khai: image (tên file trong baseUrl; nhiều bumper dùng chung 1 file cũng được),",
+    "base = màu thân, skirt = màu váy, ring = màu vòng kim loại, preview = màu chấm xem trước ở Home.",
+    "Màu là chuỗi hex RRGGBB; bỏ trống hoặc null = giữ nguyên màu gốc của bàn.",
+    "LƯU Ý: 'ring' gần như không thấy vì vòng của engine bị chóp che; muốn đổi vành gai thì sửa ảnh.",
+    "vip: 1 = chỉ người mua VIP dùng được, 0 = miễn phí.",
+    "Bố trí bàn: bumper1-3 = Attack (trên phải), bumper4 = Satellite (trên trái), bumper5-7 = Engine (dưới trái)."
+  ],
+  "themes": [
+    {
+      "id": "rainbow",
+      "name": "Rainbow",
+      "vip": 0,
+      "baseUrl": "https://3dpinball.github.io/bumpers/rainbow/",
+      "bumpers": {
+        "1": { "image": "red.webp",    "base": "E53935", "skirt": "952523", "ring": null },
+        "2": { "image": "orange.webp", "base": "F57C00", "skirt": "9F5000", "ring": null },
+        "3": { "image": "yellow.webp", "base": "FDD835", "skirt": "A48C22", "ring": null },
+        "4": { "image": "green.webp",  "base": "43A047", "skirt": "2B682E", "ring": null },
+        "5": { "image": "cyan.webp",   "base": "00ACC1", "skirt": "006F7D", "ring": null },
+        "6": { "image": "blue.webp",   "base": "2A35C4", "skirt": "1B227F", "ring": null },
+        "7": { "image": "violet.webp", "base": "9C27B0", "skirt": "651972", "ring": null }
+      }
+    },
+    {
+      "id": "flower",
+      "name": "Flower",
+      "vip": 0,
+      "baseUrl": "https://3dpinball.github.io/bumpers/flower/",
+      "bumpers": {
+        "1": { "image": "red.webp",    "base": "FF4444", "skirt": "A62C2C", "ring": "A6641E" },
+        "2": { "image": "orange.webp", "base": "FF9A2E", "skirt": "A6641E", "ring": "A6641E" },
+        "3": { "image": "yellow.webp", "base": "FFE04D", "skirt": "A69132", "ring": "A6641E" },
+        "4": { "image": "green.webp",  "base": "4CE05A", "skirt": "31913A", "ring": "A6641E" },
+        "5": { "image": "cyan.webp",   "base": "43D9E8", "skirt": "2B8D96", "ring": "E8C27A" },
+        "6": { "image": "blue.webp",   "base": "5B5BFF", "skirt": "3B3BA6", "ring": "E8C27A" },
+        "7": { "image": "violet.webp", "base": "E95BE9", "skirt": "973B97", "ring": "E8C27A" }
+      }
+    }
+  ]
+}
