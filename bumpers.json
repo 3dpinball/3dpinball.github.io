@@ -74,7 +74,7 @@
       "baseUrl": "https://3dpinball.github.io/bumpers/umbrella/",
       "banner": "banner.png",
       "bumpers": {
-        "1": {
+        "4": {
           "image": "um1.png",
           "base": "F65E5E",
           "skirt": "812D2D",
@@ -92,7 +92,7 @@
           "skirt": "580C12",
           "ring": "A81E28"
         },
-        "4": {
+        "1": {
           "image": "um4.png",
           "base": "1798E1",
           "skirt": "074E76",
