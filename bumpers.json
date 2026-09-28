@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
@@ -15,158 +15,54 @@
   ],
   "themes": [
     {
-      "id": "flower",
-      "name": "Flower",
+      "id": "caption",
+      "name": "Caption",
       "vip": 0,
       "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/flower/",
+      "baseUrl": "https://3dpinball.github.io/bumpers/caption/",
       "banner": "banner.png",
       "bumpers": {
         "1": {
-          "image": "red.png",
-          "base": "F22B24",
-          "skirt": "94100C",
+          "image": "caption_red.png",
+          "base": "C21014",
+          "skirt": "6E0A0C",
           "ring": null
         },
         "2": {
-          "image": "orange.png",
-          "base": "F28124",
-          "skirt": "94490C",
+          "image": "caption_red.png",
+          "base": "C21014",
+          "skirt": "6E0A0C",
           "ring": null
         },
         "3": {
-          "image": "gold.png",
-          "base": "F2CB24",
-          "skirt": "947A0C",
+          "image": "caption_red.png",
+          "base": "C21014",
+          "skirt": "6E0A0C",
           "ring": null
         },
         "4": {
-          "image": "green.png",
-          "base": "28F224",
-          "skirt": "0F940C",
+          "image": "caption_red.png",
+          "base": "C21014",
+          "skirt": "6E0A0C",
           "ring": null
         },
         "5": {
-          "image": "teal.png",
-          "base": "24F2DA",
-          "skirt": "0C9484",
+          "image": "caption_blue.png",
+          "base": "1410C2",
+          "skirt": "0A0A6E",
           "ring": null
         },
         "6": {
-          "image": "blue.png",
-          "base": "2477F2",
-          "skirt": "0C4294",
+          "image": "caption_blue.png",
+          "base": "1410C2",
+          "skirt": "0A0A6E",
           "ring": null
         },
         "7": {
-          "image": "violet.png",
-          "base": "B024F2",
-          "skirt": "680C94",
+          "image": "caption_blue.png",
+          "base": "1410C2",
+          "skirt": "0A0A6E",
           "ring": null
-        }
-      }
-    },
-    {
-      "id": "mushroom",
-      "name": "Mushroom",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/mushroom/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "red.png",
-          "base": "F22B24",
-          "skirt": "94100C",
-          "ring": "C9A227"
-        },
-        "2": {
-          "image": "orange.png",
-          "base": "F28124",
-          "skirt": "94490C",
-          "ring": "C9A227"
-        },
-        "3": {
-          "image": "gold.png",
-          "base": "F2CB24",
-          "skirt": "947A0C",
-          "ring": "C9A227"
-        },
-        "4": {
-          "image": "green.png",
-          "base": "28F224",
-          "skirt": "0F940C",
-          "ring": "C9A227"
-        },
-        "5": {
-          "image": "teal.png",
-          "base": "24F2DA",
-          "skirt": "0C9484",
-          "ring": "C9A227"
-        },
-        "6": {
-          "image": "blue.png",
-          "base": "2477F2",
-          "skirt": "0C4294",
-          "ring": "C9A227"
-        },
-        "7": {
-          "image": "violet.png",
-          "base": "B024F2",
-          "skirt": "680C94",
-          "ring": "C9A227"
-        }
-      }
-    },
-    {
-      "id": "koi",
-      "name": "Koi",
-      "vip": 0,
-      "ads": 1,
-      "baseUrl": "https://3dpinball.github.io/bumpers/koi/",
-      "banner": "banner.png",
-      "bumpers": {
-        "1": {
-          "image": "red.png",
-          "base": "F22B24",
-          "skirt": "94100C",
-          "ring": "8FD4DE"
-        },
-        "2": {
-          "image": "orange.png",
-          "base": "F28124",
-          "skirt": "94490C",
-          "ring": "8FD4DE"
-        },
-        "3": {
-          "image": "gold.png",
-          "base": "F2CB24",
-          "skirt": "947A0C",
-          "ring": "8FD4DE"
-        },
-        "4": {
-          "image": "green.png",
-          "base": "28F224",
-          "skirt": "0F940C",
-          "ring": "8FD4DE"
-        },
-        "5": {
-          "image": "teal.png",
-          "base": "24F2DA",
-          "skirt": "0C9484",
-          "ring": "8FD4DE"
-        },
-        "6": {
-          "image": "blue.png",
-          "base": "2477F2",
-          "skirt": "0C4294",
-          "ring": "8FD4DE"
-        },
-        "7": {
-          "image": "violet.png",
-          "base": "B024F2",
-          "skirt": "680C94",
-          "ring": "8FD4DE"
         }
       }
     }
