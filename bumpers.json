@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
@@ -26,43 +26,43 @@
           "image": "caption_red.png",
           "base": "C21014",
           "skirt": "6E0A0C",
-          "ring": null
+          "ring": "C21014"
         },
         "2": {
           "image": "caption_red.png",
           "base": "C21014",
           "skirt": "6E0A0C",
-          "ring": null
+          "ring": "C21014"
         },
         "3": {
           "image": "caption_red.png",
           "base": "C21014",
           "skirt": "6E0A0C",
-          "ring": null
+          "ring": "C21014"
         },
         "4": {
           "image": "caption_red.png",
           "base": "C21014",
           "skirt": "6E0A0C",
-          "ring": null
+          "ring": "C21014"
         },
         "5": {
           "image": "caption_blue.png",
           "base": "1410C2",
           "skirt": "0A0A6E",
-          "ring": null
+          "ring": "1410C2"
         },
         "6": {
           "image": "caption_blue.png",
           "base": "1410C2",
           "skirt": "0A0A6E",
-          "ring": null
+          "ring": "1410C2"
         },
         "7": {
           "image": "caption_blue.png",
           "base": "1410C2",
           "skirt": "0A0A6E",
-          "ring": null
+          "ring": "1410C2"
         }
       }
     }
