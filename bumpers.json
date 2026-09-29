@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
