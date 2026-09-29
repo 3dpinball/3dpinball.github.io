@@ -117,6 +117,162 @@
           "ring": "39B1B4"
         }
       }
+    },
+    {
+      "id": "umbrella2",
+      "name": "Summer Color",
+      "vip": 0,
+      "ads": 0,
+      "baseUrl": "https://3dpinball.github.io/bumpers/umbrella/",
+      "banner": "banner.png",
+      "bumpers": {
+        "4": {
+          "image": "um1.png",
+          "base": "F65E5E",
+          "skirt": "812D2D",
+          "ring": "F65E5E"
+        },
+        "2": {
+          "image": "um2.png",
+          "base": "8750CC",
+          "skirt": "45266B",
+          "ring": "8750CC"
+        },
+        "3": {
+          "image": "um3.png",
+          "base": "A81E28",
+          "skirt": "580C12",
+          "ring": "A81E28"
+        },
+        "1": {
+          "image": "um4.png",
+          "base": "1798E1",
+          "skirt": "074E76",
+          "ring": "1798E1"
+        },
+        "5": {
+          "image": "um5.png",
+          "base": "F53582",
+          "skirt": "801741",
+          "ring": "F53582"
+        },
+        "6": {
+          "image": "um6.png",
+          "base": "BDC638",
+          "skirt": "63681A",
+          "ring": "BDC638"
+        },
+        "7": {
+          "image": "um7.png",
+          "base": "39B1B4",
+          "skirt": "1A5D5E",
+          "ring": "39B1B4"
+        }
+      }
+    },
+    {
+      "id": "umbrella3",
+      "name": "Summer Color",
+      "vip": 0,
+      "ads": 0,
+      "baseUrl": "https://3dpinball.github.io/bumpers/umbrella/",
+      "banner": "banner.png",
+      "bumpers": {
+        "4": {
+          "image": "um1.png",
+          "base": "F65E5E",
+          "skirt": "812D2D",
+          "ring": "F65E5E"
+        },
+        "2": {
+          "image": "um2.png",
+          "base": "8750CC",
+          "skirt": "45266B",
+          "ring": "8750CC"
+        },
+        "3": {
+          "image": "um3.png",
+          "base": "A81E28",
+          "skirt": "580C12",
+          "ring": "A81E28"
+        },
+        "1": {
+          "image": "um4.png",
+          "base": "1798E1",
+          "skirt": "074E76",
+          "ring": "1798E1"
+        },
+        "5": {
+          "image": "um5.png",
+          "base": "F53582",
+          "skirt": "801741",
+          "ring": "F53582"
+        },
+        "6": {
+          "image": "um6.png",
+          "base": "BDC638",
+          "skirt": "63681A",
+          "ring": "BDC638"
+        },
+        "7": {
+          "image": "um7.png",
+          "base": "39B1B4",
+          "skirt": "1A5D5E",
+          "ring": "39B1B4"
+        }
+      }
+    },
+    {
+      "id": "umbrella4",
+      "name": "Summer Color",
+      "vip": 0,
+      "ads": 0,
+      "baseUrl": "https://3dpinball.github.io/bumpers/umbrella/",
+      "banner": "banner.png",
+      "bumpers": {
+        "4": {
+          "image": "um1.png",
+          "base": "F65E5E",
+          "skirt": "812D2D",
+          "ring": "F65E5E"
+        },
+        "2": {
+          "image": "um2.png",
+          "base": "8750CC",
+          "skirt": "45266B",
+          "ring": "8750CC"
+        },
+        "3": {
+          "image": "um3.png",
+          "base": "A81E28",
+          "skirt": "580C12",
+          "ring": "A81E28"
+        },
+        "1": {
+          "image": "um4.png",
+          "base": "1798E1",
+          "skirt": "074E76",
+          "ring": "1798E1"
+        },
+        "5": {
+          "image": "um5.png",
+          "base": "F53582",
+          "skirt": "801741",
+          "ring": "F53582"
+        },
+        "6": {
+          "image": "um6.png",
+          "base": "BDC638",
+          "skirt": "63681A",
+          "ring": "BDC638"
+        },
+        "7": {
+          "image": "um7.png",
+          "base": "39B1B4",
+          "skirt": "1A5D5E",
+          "ring": "39B1B4"
+        }
+      }
     }
   ]
 }
