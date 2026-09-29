@@ -117,58 +117,6 @@
           "ring": "39B1B4"
         }
       }
-    },
-    {
-      "id": "candyswish",
-      "name": "Candy Swirl",
-      "vip": 0,
-      "ads": 0,
-      "baseUrl": "https://3dpinball.github.io/bumpers/candyswish/",
-      "banner": "2.png",
-      "bumpers": {
-        "1": {
-          "image": "2.png",
-          "base": "E81010",
-          "skirt": "740808",
-          "ring": "E81010"
-        },
-        "2": {
-          "image": "2.png",
-          "base": "E81010",
-          "skirt": "740808",
-          "ring": "E81010"
-        },
-        "3": {
-          "image": "2.png",
-          "base": "E81010",
-          "skirt": "740808",
-          "ring": "E81010"
-        },
-        "4": {
-          "image": "2.png",
-          "base": "E81010",
-          "skirt": "740808",
-          "ring": "E81010"
-        },
-        "5": {
-          "image": "1.png",
-          "base": "00D8E0",
-          "skirt": "006C70",
-          "ring": "00D8E0"
-        },
-        "6": {
-          "image": "1.png",
-          "base": "00D8E0",
-          "skirt": "006C70",
-          "ring": "00D8E0"
-        },
-        "7": {
-          "image": "1.png",
-          "base": "00D8E0",
-          "skirt": "006C70",
-          "ring": "00D8E0"
-        }
-      }
     }
   ]
 }
