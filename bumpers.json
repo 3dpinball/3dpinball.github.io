@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 17,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
@@ -176,7 +176,7 @@
       "vip": 0,
       "ads": 0,
       "baseUrl": "https://3dpinball.github.io/bumpers/sharingan/",
-      "banner": "1.png",
+      "banner": "banner.png",
       "bumpers": {
         "1": {
           "image": "1.png",
