@@ -174,7 +174,7 @@
       "id": "sharingan",
       "name": "Sharingan",
       "vip": 0,
-      "ads": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/sharingan/",
       "banner": "banner.png",
       "bumpers": {
