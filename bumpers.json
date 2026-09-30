@@ -169,6 +169,58 @@
           "ring": "A868B8"
         }
       }
+    },
+    {
+      "id": "sharingan",
+      "name": "Sharingan",
+      "vip": 0,
+      "ads": 0,
+      "baseUrl": "https://3dpinball.github.io/bumpers/sharingan/",
+      "banner": "banner.png",
+      "bumpers": {
+        "1": {
+          "image": "1.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "2": {
+          "image": "2.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "3": {
+          "image": "3.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "4": {
+          "image": "4.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "5": {
+          "image": "5.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "6": {
+          "image": "6.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "7": {
+          "image": "7.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        }
+      }
     }
   ]
 }
