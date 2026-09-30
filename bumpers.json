@@ -122,7 +122,7 @@
       "id": "candyswish",
       "name": "Candy Swirl",
       "vip": 0,
-      "ads": 0,
+      "ads": 1,
       "baseUrl": "https://3dpinball.github.io/bumpers/candyswish/",
       "banner": "banner.png",
       "bumpers": {
