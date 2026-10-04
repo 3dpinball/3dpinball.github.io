@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 17,
   "_doc": [
     "Chủ đề BUMPER của game 3D Pinball (Android + iOS dùng chung file này).",
     "THÊM CHỦ ĐỀ MỚI: tạo thư mục bumpers/<id>/ đẩy ảnh lên, thêm một khối vào mảng themes,",
@@ -115,6 +115,110 @@
           "base": "39B1B4",
           "skirt": "1A5D5E",
           "ring": "39B1B4"
+        }
+      }
+    },
+    {
+      "id": "candyswish",
+      "name": "Candy Swirl",
+      "vip": 0,
+      "ads": 1,
+      "baseUrl": "https://3dpinball.github.io/bumpers/candyswish/",
+      "banner": "banner.png",
+      "bumpers": {
+        "1": {
+          "image": "1.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "E8407A"
+        },
+        "2": {
+          "image": "2.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "D42A45"
+        },
+        "3": {
+          "image": "3.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "8CC63F"
+        },
+        "4": {
+          "image": "4.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "F5C518"
+        },
+        "5": {
+          "image": "5.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "F08A2C"
+        },
+        "6": {
+          "image": "6.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "1FA8E6"
+        },
+        "7": {
+          "image": "7.png",
+          "base": "FFF8E7",
+          "skirt": "FFF8E7",
+          "ring": "A868B8"
+        }
+      }
+    },
+    {
+      "id": "sharingan",
+      "name": "Sharingan",
+      "vip": 0,
+      "ads": 1,
+      "baseUrl": "https://3dpinball.github.io/bumpers/sharingan/",
+      "banner": "banner.png",
+      "bumpers": {
+        "1": {
+          "image": "1.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "2": {
+          "image": "2.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "3": {
+          "image": "3.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "4": {
+          "image": "4.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "5": {
+          "image": "5.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "6": {
+          "image": "6.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
+        },
+        "7": {
+          "image": "7.png",
+          "base": "000000",
+          "skirt": "000000",
+          "ring": "000000"
         }
       }
     }
