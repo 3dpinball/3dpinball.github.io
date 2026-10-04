@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-fullscreen">
+  <title>Road Rash</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+      touch-action: none;
+      overscroll-behavior: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #dos {
+      position: absolute;
+      inset: 0;
+    }
+
+    /* ===== Touch controls ===== */
+    #pad {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1000;
+      display: none;
+    }
+
+    #pad.rr-show {
+      display: block;
+    }
+
+    .rr-btn {
+      position: absolute;
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.18);
+      border: 2px solid rgba(255, 255, 255, 0.45);
+      color: rgba(255, 255, 255, 0.92);
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+      line-height: 1.1;
+      touch-action: none;
+      box-sizing: border-box;
+    }
+
+    .rr-btn.rr-on {
+      background: rgba(255, 210, 60, 0.55);
+      border-color: rgba(255, 230, 120, 0.95);
+    }
+
+    .rr-act {
+      width: 76px;
+      height: 76px;
+      font-size: 16px;
+    }
+
+    .rr-key {
+      position: static;
+      width: 62px;
+      height: 32px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+
+    /* right side: 3 attack buttons in a triangle */
+    #b-punch {
+      right: calc(108px + env(safe-area-inset-right));
+      bottom: 112px;
+      background: rgba(230, 70, 60, 0.3);
+    }
+
+    #b-kick {
+      right: calc(20px + env(safe-area-inset-right));
+      bottom: 60px;
+      background: rgba(60, 140, 255, 0.3);
+    }
+
+    #b-back {
+      right: calc(120px + env(safe-area-inset-right));
+      bottom: 22px;
+      background: rgba(60, 200, 90, 0.3);
+    }
+
+    /* top bar: menu keys */
+    #topbar {
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+
+    /* left side: joystick */
+    #stick-zone {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 45%;
+      height: 75%;
+      pointer-events: auto;
+      touch-action: none;
+    }
+
+    #stick-base {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      margin: -75px 0 0 -75px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      box-sizing: border-box;
+    }
+
+    #stick-base span {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    #stick-knob {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 66px;
+      height: 66px;
+      margin: -33px 0 0 -33px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.45);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-sizing: border-box;
+    }
+
+    #stick-base.rr-on #stick-knob {
+      background: rgba(255, 210, 60, 0.7);
+    }
+
+
+    #rotate {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: #000;
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 20px;
+      padding: 16px;
+    }
+
+    @media (orientation: portrait) and (pointer: coarse) {
+      #rotate {
+        display: flex;
+      }
+    }
+  </style>
+  <script src="./js-dos.js"></script>
+  <link rel="stylesheet" href="./js-dos.css">
+</head>
+
+<body>
+  <div id="dos"></div>
+
+  <div id="pad">
+    <div id="topbar">
+      <div class="rr-btn rr-key" data-key="enter">ENTER</div>
+      <div class="rr-btn rr-key" data-key="esc">ESC</div>
+      <div class="rr-btn rr-key" data-key="tab">TAB</div>
+    </div>
+
+    <div id="stick-zone">
+      <div id="stick-base">
+        <span style="left:50%;top:6px;transform:translateX(-50%)">GA</span>
+        <span style="left:50%;bottom:6px;transform:translateX(-50%)">PHANH</span>
+        <div id="stick-knob"></div>
+      </div>
+    </div>
+
+    <div class="rr-btn rr-act" id="b-punch" data-key="insert">ĐÁNH</div>
+    <div class="rr-btn rr-act" id="b-kick" data-key="enter">ĐÁ</div>
+    <div class="rr-btn rr-act" id="b-back" data-key="space">TÁT</div>
+  </div>
+
+  <div id="rotate">Xoay ngang điện thoại để chơi Road Rash 🏍️</div>
+
+  <script>
+  (() => {
+    // js-dos key codes. Road Rash 95 default keyboard bindings:
+    // Accelerate=Up, Brake=Down, Turn=Left/Right, Swing=Insert, Kick=Enter, Backhand=Space
+    const KEYS = {
+      left: 263, right: 262, up: 265, down: 264,
+      enter: 257, space: 32, esc: 256, tab: 258,
+      insert: 260,
+    };
+
+    let dosCi = null;
+    const held = new Map(); // key name -> number of sources holding it
+
+    function press(name) {
+      const n = (held.get(name) || 0) + 1;
+      held.set(name, n);
+      if (n === 1 && dosCi) dosCi.sendKeyEvent(KEYS[name], true);
+    }
+
+    function release(name) {
+      const n = (held.get(name) || 0) - 1;
+      if (n <= 0) {
+        held.delete(name);
+        if (dosCi) dosCi.sendKeyEvent(KEYS[name], false);
+      } else {
+        held.set(name, n);
+      }
+    }
+
+    // ===== buttons: pointerId -> button; a finger can slide between buttons =====
+    const fingers = new Map();
+
+    function buttonAt(x, y) {
+      const el = document.elementFromPoint(x, y);
+      return (el && el.closest && el.closest(".rr-btn[data-key]")) || null;
+    }
+
+    function setFinger(id, btn) {
+      const old = fingers.get(id);
+      if (old === btn) return;
+      if (old) {
+        release(old.dataset.key);
+        old.classList.remove("rr-on");
+      }
+      if (btn) {
+        press(btn.dataset.key);
+        btn.classList.add("rr-on");
+        fingers.set(id, btn);
+      } else {
+        fingers.delete(id);
+      }
+    }
+
+    document.querySelectorAll("#pad .rr-btn[data-key]").forEach((btn) => {
+      btn.addEventListener("pointerdown", (e) => {
+        e.preventDefault();
+        setFinger(e.pointerId, btn);
+      });
+    });
+
+    // ===== joystick: up=gas, down=brake, left/right=steer (diagonals allowed) =====
+    const zone = document.getElementById("stick-zone");
+    const base = document.getElementById("stick-base");
+    const knob = document.getElementById("stick-knob");
+    const RADIUS = 60;     // knob travel in px
+    const DEAD = 0.35;     // dead zone (fraction of RADIUS)
+    let stickId = null;
+    let cx = 0, cy = 0;
+    const stickKeys = new Set();
+
+    function homeStick() {
+      const r = zone.getBoundingClientRect();
+      base.style.left = "120px";
+      base.style.top = (r.height - 110) + "px";
+    }
+
+    function setStickKeys(want) {
+      for (const k of [...stickKeys]) if (!want.has(k)) { stickKeys.delete(k); release(k); }
+      for (const k of want) if (!stickKeys.has(k)) { stickKeys.add(k); press(k); }
+    }
+
+    function moveStick(x, y) {
+      let dx = x - cx, dy = y - cy;
+      const d = Math.hypot(dx, dy);
+      if (d > RADIUS) { dx = dx / d * RADIUS; dy = dy / d * RADIUS; }
+      knob.style.transform = `translate(${dx}px, ${dy}px)`;
+      const nx = dx / RADIUS, ny = dy / RADIUS;
+      const want = new Set();
+      if (ny < -DEAD) want.add("up");
+      if (ny > DEAD) want.add("down");
+      if (nx < -DEAD) want.add("left");
+      if (nx > DEAD) want.add("right");
+      setStickKeys(want);
+    }
+
+    function endStick() {
+      stickId = null;
+      knob.style.transform = "";
+      base.classList.remove("rr-on");
+      setStickKeys(new Set());
+      homeStick();
+    }
+
+    zone.addEventListener("pointerdown", (e) => {
+      if (stickId !== null) return;
+      e.preventDefault();
+      stickId = e.pointerId;
+      const r = zone.getBoundingClientRect();
+      // the stick appears under the finger
+      cx = e.clientX; cy = e.clientY;
+      base.style.left = (cx - r.left) + "px";
+      base.style.top = (cy - r.top) + "px";
+      base.classList.add("rr-on");
+      moveStick(e.clientX, e.clientY);
+    });
+
+    window.addEventListener("pointermove", (e) => {
+      if (e.pointerId === stickId) moveStick(e.clientX, e.clientY);
+      else if (fingers.has(e.pointerId)) setFinger(e.pointerId, buttonAt(e.clientX, e.clientY));
+    }, { passive: true });
+
+    function lift(e) {
+      if (e.pointerId === stickId) endStick();
+      else setFinger(e.pointerId, null);
+    }
+    window.addEventListener("pointerup", lift);
+    window.addEventListener("pointercancel", lift);
+
+    function releaseAll() {
+      for (const id of [...fingers.keys()]) setFinger(id, null);
+      if (stickId !== null) endStick();
+    }
+    window.addEventListener("blur", releaseAll);
+    document.addEventListener("visibilitychange", releaseAll);
+    window.addEventListener("resize", () => { if (stickId === null) homeStick(); });
+
+    // no context menu / long-press menu / pinch zoom
+    document.addEventListener("contextmenu", (e) => e.preventDefault());
+    document.addEventListener("gesturestart", (e) => e.preventDefault());
+
+    // ===== boot straight into the game =====
+    document.getElementById("pad").classList.add("rr-show");
+    homeStick();
+
+    Dos(document.getElementById("dos"), {
+      url: "./roadrash-v5.jsdos",
+      pathPrefix: new URL("./emulators/", location.href).href,
+      renderBackend: "webgl",
+      renderAspect: "4/3",
+      kiosk: true,
+      autoStart: true,
+      noCloud: true,
+      onEvent: (event, arg) => {
+        if (event === "ci-ready") dosCi = arg;
+      },
+    });
+  })();
+  </script>
+</body>
+
+</html>
