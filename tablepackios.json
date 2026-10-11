@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "_doc": [
+    "Danh sách TABLE PACK cho app iOS (Android dùng tablepack.json). Chung thư mục bàn + zip trên GitHub. Bàn Classic nằm sẵn trong app, KHÔNG khai ở đây.",
+    "THÊM BÀN MỚI: đẩy lên thư mục table/<id>/ gồm banner.png + <id>.zip (trong zip có image/ và voice/),",
+    "thêm một khối vào mảng 'tables', rồi TĂNG 'version' đầu file lên 1 để app hiện nhãn NEW.",
+    "SỬA BÀN ĐÃ CÓ (thay zip hoặc banner): TĂNG 'version' CỦA BÀN ĐÓ để máy người chơi tải lại.",
+    "Làm zip: trong Finder chọn 2 thư mục image/ voice/ (hoặc cả thư mục bàn) -> Nén, đổi tên thành <id>.zip (rác __MACOSX/.DS_Store app tự bỏ).",
+    "image/<tên ảnh trong bàn>: thay ảnh cùng tên (backdrop, plastics, pf, pf-top, JP Chrome_Ball, spinner, spinner2,",
+    "  dt_booster, dt_medal, dt_multi, CustomWhiteTip, d_*...). Thiếu file nào thì bàn giữ ảnh gốc.",
+    "image/bumper<1-7>_<off|lv1|lv2|lv3|lv4>.png: chóp bumper theo cấp (thiếu thì dùng image/bumper<1-7>.png).",
+    "voice/vo_*.ogg: thay giọng đọc cùng tên.",
+    "vip: 1 = chỉ người mua VIP dùng được. ads: 1 = phải xem quảng cáo thưởng mỗi ván (VIP được bỏ qua).",
+    "bumperLevelColors: 4 màu đèn bumper cho 4 cấp, hex RRGGBB (null = giữ màu gốc xanh dương/xanh lá/vàng/đỏ).",
+    "banner: link ảnh vuông hiện ở ô TABLE PACK (app tải ngay khi mở Home). zip: link gói ảnh+voice, CHỈ tải khi người chơi bấm ô bàn. Link đầy đủ https://... hoặc đường dẫn trong site."
+  ],
+  "tables": [
+    {
+      "id": "classic_test",
+      "name": "Classic Test",
+      "vip": 0,
+      "ads": 0,
+      "version": 1,
+      "banner": "https://3dpinball.github.io/table/classic_test/banner.png",
+      "zip": "https://3dpinball.github.io/table/classic_test/classic_test.zip",
+      "bumperLevelColors": [
+        "00D8FF",
+        "A040FF",
+        "FF8A00",
+        "FF2A7A"
+      ]
+    }
+  ]
+}
