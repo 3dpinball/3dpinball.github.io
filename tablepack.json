@@ -12,7 +12,7 @@
     "voice/vo_*.ogg: thay giọng đọc cùng tên.",
     "vip: 1 = chỉ người mua VIP dùng được. ads: 1 = phải xem quảng cáo thưởng mỗi ván (VIP được bỏ qua).",
     "bumperLevelColors: 4 màu đèn bumper cho 4 cấp, hex RRGGBB (null = giữ màu gốc xanh dương/xanh lá/vàng/đỏ).",
-    "zip / banner: chỉ khai khi KHÔNG theo mặc định table/<id>.zip và table/<id>/banner.png."
+    "banner: link ảnh vuông hiện ở ô TABLE PACK (app tải ngay khi mở Home). zip: link gói ảnh+voice, CHỈ tải khi người chơi bấm ô bàn. Link đầy đủ https://... hoặc đường dẫn trong site."
   ],
   "tables": [
     {
@@ -21,6 +21,8 @@
       "vip": 0,
       "ads": 0,
       "version": 1,
+      "banner": "https://3dpinball.github.io/table/classic_test/banner.png",
+      "zip": "https://3dpinball.github.io/table/classic_test.zip",
       "bumperLevelColors": [
         "00D8FF",
         "A040FF",
