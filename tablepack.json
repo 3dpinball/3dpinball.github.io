@@ -12,7 +12,8 @@
     "voice/vo_*.ogg: thay giọng đọc cùng tên.",
     "vip: 1 = chỉ người mua VIP dùng được. ads: 1 = phải xem quảng cáo thưởng mỗi ván (VIP được bỏ qua).",
     "bumperLevelColors: 4 màu đèn bumper cho 4 cấp, hex RRGGBB (null = giữ màu gốc xanh dương/xanh lá/vàng/đỏ).",
-    "banner: link ảnh vuông hiện ở ô TABLE PACK (app tải ngay khi mở Home). zip: link gói ảnh+voice, CHỈ tải khi người chơi bấm ô bàn. Link đầy đủ https://... hoặc đường dẫn trong site."
+    "banner: link ảnh vuông hiện ở ô TABLE PACK (app tải ngay khi mở Home). zip: link gói ảnh+voice, CHỈ tải khi người chơi bấm ô bàn. Link đầy đủ https://... hoặc đường dẫn trong site.",
+    "bumpers: màu THÂN từng bumper \"1\"..\"7\" (cố định, KHÔNG theo cấp): base = thân/đế, skirt = váy, ring = vòng kim loại (hex RRGGBB). Thiếu bumper/màu nào thì giữ màu gốc. 1-3 Attack, 4 Satellite, 5-7 Engine."
   ],
   "tables": [
     {
@@ -28,7 +29,44 @@
         "A040FF",
         "FF8A00",
         "FF2A7A"
-      ]
+      ],
+      "bumpers": {
+        "1": {
+          "base": "C21014",
+          "skirt": "6E0A0C",
+          "ring": "C21014"
+        },
+        "2": {
+          "base": "C21014",
+          "skirt": "6E0A0C",
+          "ring": "C21014"
+        },
+        "3": {
+          "base": "C21014",
+          "skirt": "6E0A0C",
+          "ring": "C21014"
+        },
+        "4": {
+          "base": "C21014",
+          "skirt": "6E0A0C",
+          "ring": "C21014"
+        },
+        "5": {
+          "base": "1410C2",
+          "skirt": "02023D",
+          "ring": "1410C2"
+        },
+        "6": {
+          "base": "1410C2",
+          "skirt": "02023D",
+          "ring": "1410C2"
+        },
+        "7": {
+          "base": "1410C2",
+          "skirt": "02023D",
+          "ring": "1410C2"
+        }
+      }
     }
   ]
 }
