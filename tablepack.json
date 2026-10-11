@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "_doc": [
+    "Danh sách TABLE PACK (chủ đề bàn) của game 3D Pinball. Bàn Classic nằm sẵn trong app, KHÔNG khai ở đây.",
+    "THÊM BÀN MỚI: đẩy lên table/<id>.zip (bên trong có image/ và voice/) + table/<id>/banner.png,",
+    "thêm một khối vào mảng 'tables', rồi TĂNG 'version' đầu file lên 1 để app hiện nhãn NEW.",
+    "SỬA BÀN ĐÃ CÓ (thay zip hoặc banner): TĂNG 'version' CỦA BÀN ĐÓ để máy người chơi tải lại.",
+    "Làm zip: trong Finder chuột phải thư mục table/<id> -> Nén, đổi tên thành <id>.zip (rác __MACOSX/.DS_Store app tự bỏ).",
+    "image/<tên ảnh trong bàn>: thay ảnh cùng tên (backdrop, plastics, pf, pf-top, JP Chrome_Ball, spinner, spinner2,",
+    "  dt_booster, dt_medal, dt_multi, CustomWhiteTip, d_*...). Thiếu file nào thì bàn giữ ảnh gốc.",
+    "image/bumper<1-7>_<off|lv1|lv2|lv3|lv4>.png: chóp bumper theo cấp (thiếu thì dùng image/bumper<1-7>.png).",
+    "voice/vo_*.ogg: thay giọng đọc cùng tên.",
+    "vip: 1 = chỉ người mua VIP dùng được. ads: 1 = phải xem quảng cáo thưởng mỗi ván (VIP được bỏ qua).",
+    "bumperLevelColors: 4 màu đèn bumper cho 4 cấp, hex RRGGBB (null = giữ màu gốc xanh dương/xanh lá/vàng/đỏ).",
+    "zip / banner: chỉ khai khi KHÔNG theo mặc định table/<id>.zip và table/<id>/banner.png."
+  ],
+  "tables": [
+    {
+      "id": "classic_test",
+      "name": "Classic Test",
+      "vip": 0,
+      "ads": 0,
+      "version": 1,
+      "bumperLevelColors": [
+        "00D8FF",
+        "A040FF",
+        "FF8A00",
+        "FF2A7A"
+      ]
+    }
+  ]
+}
